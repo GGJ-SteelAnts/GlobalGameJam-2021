@@ -35,11 +35,6 @@ public class PlayerManager : MonoBehaviour
         RunSwitch();
     }
 
-    void FixedUpdate()
-    {
-        Rotate();
-    }
-
     void RunSwitch()
     {
         if (Input.GetAxisRaw("Run") > 0)
@@ -56,7 +51,6 @@ public class PlayerManager : MonoBehaviour
     {
         rigidBody.MovePosition(
             transform.position +
-            (transform.forward * (run ? runSpeed : speed) * Input.GetAxis("Vertical") * Time.deltaTime) +
             (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime) +
             jumpPower
         );
@@ -73,47 +67,9 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    void Rotate()
-    {
-        rigidBody.freezeRotation = false;
-        transform.Rotate(new Vector3(0, rotateSpeed * Input.GetAxis("Mouse X") * mouseSensitive * Time.deltaTime, 0));
-        if (
-            ((playerCamera.transform.localEulerAngles.x >= 270 && playerCamera.transform.localEulerAngles.x <= 360) &&
-            playerCamera.transform.localEulerAngles.y == 0 &&
-            playerCamera.transform.localEulerAngles.z == 0) ||
-            ((playerCamera.transform.localEulerAngles.x <= 90 && playerCamera.transform.localEulerAngles.x >= 0) &&
-            playerCamera.transform.localEulerAngles.y == 0 &&
-            playerCamera.transform.localEulerAngles.z == 0)
-        )
-        {
-            playerCamera.transform.Rotate(new Vector3(rotateSpeed * -Input.GetAxis("Mouse Y") * mouseSensitive * Time.deltaTime, 0, 0));
-        }
-        else if (
-          ((playerCamera.transform.localEulerAngles.x >= 270 && playerCamera.transform.localEulerAngles.x <= 360) &&
-          playerCamera.transform.localEulerAngles.y == 180 &&
-          playerCamera.transform.localEulerAngles.z == 180)
-      )
-        {
-            playerCamera.transform.Rotate(new Vector3(rotateSpeed * (-Input.GetAxis("Mouse Y") > 0 ? -Input.GetAxis("Mouse Y") : 0) * mouseSensitive * Time.deltaTime, 0, 0));
-        }
-        else if (
-        ((playerCamera.transform.localEulerAngles.x <= 90 && playerCamera.transform.localEulerAngles.x >= 0) &&
-        playerCamera.transform.localEulerAngles.y == 180 &&
-        playerCamera.transform.localEulerAngles.z == 180)
-      )
-        {
-            playerCamera.transform.Rotate(new Vector3(rotateSpeed * (-Input.GetAxis("Mouse Y") < 0 ? -Input.GetAxis("Mouse Y") : 0) * mouseSensitive * Time.deltaTime, 0, 0));
-        }
-        else
-        {
-            playerCamera.transform.Rotate(new Vector3(rotateSpeed * -Input.GetAxis("Mouse Y") * mouseSensitive * Time.deltaTime, 0, 0));
-        }
-        rigidBody.freezeRotation = true;
-    }
-
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Ground")
+        if (other.tag == "Ground" || other.tag == "Objects")
         {
             jumpPower = Vector3.zero;
             onGround = true;
@@ -122,7 +78,7 @@ public class PlayerManager : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Ground")
+        if (other.tag == "Ground" || other.tag == "Objects")
         {
             onGround = false;
         }
