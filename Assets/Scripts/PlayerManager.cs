@@ -9,6 +9,9 @@ public class PlayerManager : MonoBehaviour
     public float runSpeed = 20;
     public float rotateSpeed = 5;
     public float mouseSensitive = 100;
+    public float jump = 5;
+    private Vector3 jumpPower = new Vector3();
+    public bool onGround = false;
     private bool run = false;
     private Camera playerCamera;
     private Rigidbody rigidBody;
@@ -27,7 +30,7 @@ public class PlayerManager : MonoBehaviour
         {
             Application.Quit(0);
         }
-
+        Jump();
         Move();
         RunSwitch();
     }
@@ -54,8 +57,20 @@ public class PlayerManager : MonoBehaviour
         rigidBody.MovePosition(
             transform.position +
             (transform.forward * (run ? runSpeed : speed) * Input.GetAxis("Vertical") * Time.deltaTime) +
-            (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
+            (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime) +
+            jumpPower
         );
+    }
+
+    void Jump()
+    {
+        Debug.Log(rigidBody.velocity.y);
+        if (Input.GetAxisRaw("Jump") > 0) {
+            if (rigidBody.velocity.y <= 2 && onGround)
+            {
+                jumpPower = transform.up * jump * Time.deltaTime;
+            }
+        }
     }
 
     void Rotate()
@@ -94,5 +109,22 @@ public class PlayerManager : MonoBehaviour
             playerCamera.transform.Rotate(new Vector3(rotateSpeed * -Input.GetAxis("Mouse Y") * mouseSensitive * Time.deltaTime, 0, 0));
         }
         rigidBody.freezeRotation = true;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Ground")
+        {
+            jumpPower = Vector3.zero;
+            onGround = true;
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Ground")
+        {
+            onGround = false;
+        }
     }
 }
