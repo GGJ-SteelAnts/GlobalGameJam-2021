@@ -19,6 +19,7 @@ public class PlayerManager : MonoBehaviour
 
     public List<int> activeAbility = new List<int>(); //without ability=0 or null, dubleJump = 1, push/pull = 2, dash = 3
     private bool dubleJump = true;
+    private GameObject pushPullObject;
 
     private bool startEating = false;
 
@@ -55,6 +56,7 @@ public class PlayerManager : MonoBehaviour
         {
             playerAnimator.Play("Die");
         }
+        AbilityAction();
         DeactivePowerCube();
         Move();
         RunSwitch();
@@ -70,6 +72,37 @@ public class PlayerManager : MonoBehaviour
     private void FixedUpdate()
     {
         Jump();
+    }
+
+    private void AbilityAction()
+    {
+        if (activeAbility.Count > 0 && activeAbility[0] == 2)
+        {
+            if (pushPullObject != null)
+            {
+                pushPullObject.GetComponent<Rigidbody>().MovePosition(
+                    pushPullObject.transform.position +
+                    (pushPullObject.transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
+                );
+            }
+        }
+    }
+
+    public GameObject GetPushPullObject()
+    {
+        return pushPullObject;
+    }
+
+    public void SetPushPullObject(GameObject objectPP)
+    {
+        if (activeAbility.Count > 0 && activeAbility[0] == 2) {
+            pushPullObject = objectPP;
+        }
+    }
+
+    public void RemovePushPullObject()
+    {
+        pushPullObject = null;
     }
 
     void RunSwitch()
@@ -95,20 +128,25 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetAxis("Horizontal") > 0)
         {
             playerAnimator.SetBool("Walk", true);
-            playerAnimator.transform.rotation = Quaternion.Lerp(
-                playerAnimator.transform.rotation,
-                Quaternion.Euler(playerAnimator.transform.eulerAngles.x, -90f, playerAnimator.transform.eulerAngles.z),
-                localSpeed * Time.deltaTime
-            );
+            if (pushPullObject == null) {
+                playerAnimator.transform.rotation = Quaternion.Lerp(
+                    playerAnimator.transform.rotation,
+                    Quaternion.Euler(playerAnimator.transform.eulerAngles.x, -90f, playerAnimator.transform.eulerAngles.z),
+                    localSpeed * Time.deltaTime
+                );
+            }
         }
         else if (Input.GetAxis("Horizontal") < 0)
         {
             playerAnimator.SetBool("Walk", true);
-            playerAnimator.transform.rotation = Quaternion.Lerp(
-                playerAnimator.transform.rotation,
-                Quaternion.Euler(playerAnimator.transform.eulerAngles.x, 90f, playerAnimator.transform.eulerAngles.z),
-                localSpeed * Time.deltaTime
-            );
+            if (pushPullObject == null)
+            {
+                playerAnimator.transform.rotation = Quaternion.Lerp(
+                    playerAnimator.transform.rotation,
+                    Quaternion.Euler(playerAnimator.transform.eulerAngles.x, 90f, playerAnimator.transform.eulerAngles.z),
+                    localSpeed * Time.deltaTime
+                );
+            }
         }
         else
         {
@@ -132,6 +170,7 @@ public class PlayerManager : MonoBehaviour
         {
             if (rigidBody.velocity.y <= 1 && (onGround || (dubleJump && activeAbility.Count > 0 && activeAbility[0] == 1)))
             {
+                pushPullObject = null;
                 rigidBody.AddForce(
                     (transform.right * (run ? runSpeed : speed) * 5 * Input.GetAxis("Horizontal") * Time.deltaTime) + 
                     (transform.up * jump * 10 * Time.deltaTime), 
@@ -243,10 +282,11 @@ public class PlayerManager : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Objects")
+        if (collision.gameObject.GetComponent<PowerCubeManager>() != null)
         {
             Vector3 hit = collision.contacts[0].normal;
-            if (hit.x != 0) {
+            if (hit.x != 0 && hit.y == 0)
+            {
                 powerCubeManager = collision.gameObject.GetComponent<PowerCubeManager>();
                 playerAnimator.SetTrigger("Eat");
             }
