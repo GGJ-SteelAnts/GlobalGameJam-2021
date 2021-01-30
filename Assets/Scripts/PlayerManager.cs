@@ -89,7 +89,7 @@ public class PlayerManager : MonoBehaviour
     void Animation()
     {
         float localSpeed = 5f;
-        if (Input.GetAxis("Horizontal") > 0)
+        if (Input.GetAxis("Horizontal") > 0 && onGround)
         {
             playerAnimator.SetBool("Walk", true);
             playerAnimator.transform.rotation = Quaternion.Lerp(
@@ -98,7 +98,7 @@ public class PlayerManager : MonoBehaviour
                 localSpeed * Time.deltaTime
             );
         }
-        else if (Input.GetAxis("Horizontal") < 0)
+        else if (Input.GetAxis("Horizontal") < 0 && onGround)
         {
             playerAnimator.SetBool("Walk", true);
             playerAnimator.transform.rotation = Quaternion.Lerp(
@@ -115,10 +115,12 @@ public class PlayerManager : MonoBehaviour
 
     void Move()
     {
-        rigidBody.MovePosition(
-            transform.position +
-            (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
-        );
+        if (onGround) {
+            rigidBody.MovePosition(
+                transform.position +
+                (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
+            );
+        }
     }
 
     void Jump()
@@ -127,7 +129,11 @@ public class PlayerManager : MonoBehaviour
         {
             if (rigidBody.velocity.y <= 1 && onGround)
             {
-                rigidBody.AddForce(transform.up * jump * 10 * Time.deltaTime, ForceMode.VelocityChange);
+                rigidBody.AddForce(
+                    (transform.right * (run ? runSpeed : speed) * 5 * Input.GetAxis("Horizontal") * Time.deltaTime) + 
+                    (transform.up * jump * 10 * Time.deltaTime), 
+                    ForceMode.VelocityChange
+                );
             }
         }
     }

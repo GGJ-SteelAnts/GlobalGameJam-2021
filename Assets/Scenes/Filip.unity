@@ -306,27 +306,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &3881240002875110221 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8426673075699058389, guid: a81c7869040fbef4f8d5acf2c1499c42,
-    type: 3}
-  m_PrefabInstance: {fileID: 4696517446902494616}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3881240002875110222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3881240002875110221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08fe7369accc1464499b2f2a75559298, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerType: 1
-  powerTime: 10
-  powerUnit: 0.2
 --- !u!1001 &4696517446902494616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -334,36 +313,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7942378762641371369, guid: a81c7869040fbef4f8d5acf2c1499c42,
-        type: 3}
-      propertyPath: m_CastShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7942378762641371369, guid: a81c7869040fbef4f8d5acf2c1499c42,
-        type: 3}
-      propertyPath: m_MotionVectors
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7942378762641371369, guid: a81c7869040fbef4f8d5acf2c1499c42,
-        type: 3}
-      propertyPath: m_ReceiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7942378762641371369, guid: a81c7869040fbef4f8d5acf2c1499c42,
-        type: 3}
-      propertyPath: m_LightProbeUsage
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7942378762641371369, guid: a81c7869040fbef4f8d5acf2c1499c42,
-        type: 3}
-      propertyPath: m_ReflectionProbeUsage
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7942378762641371369, guid: a81c7869040fbef4f8d5acf2c1499c42,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b5a0edef0c6a0d649871a5d54e0a52bb, type: 2}
     - target: {fileID: 8426673075699058389, guid: a81c7869040fbef4f8d5acf2c1499c42,
         type: 3}
       propertyPath: m_Name

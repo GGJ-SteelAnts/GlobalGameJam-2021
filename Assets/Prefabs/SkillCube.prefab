@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3033667219593020291, guid: a2c33b905bb71c74aacdeca187b58abf, type: 3}
+  - {fileID: 2100000, guid: b5a0edef0c6a0d649871a5d54e0a52bb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 9203772316689128559}
   - component: {fileID: 9080541236209420060}
   - component: {fileID: 5580451219914191876}
+  - component: {fileID: 3881240002875110222}
   m_Layer: 0
   m_Name: SkillCube
   m_TagString: Objects
@@ -104,7 +105,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8426673075699058389}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.38, y: 0.5, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
@@ -142,3 +143,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: a2c33b905bb71c74aacdeca187b58abf, type: 3}
+--- !u!114 &3881240002875110222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8426673075699058389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08fe7369accc1464499b2f2a75559298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerType: 1
+  powerTime: 10
+  powerUnit: 0.2
