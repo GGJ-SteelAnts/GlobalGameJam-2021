@@ -71,7 +71,7 @@ public class ObjectManager : MonoBehaviour
                 playerManager = collision.gameObject.GetComponent<PlayerManager>();
                 if (playerManager.activeAbility.Count > 0 && playerManager.activeAbility[0] == 2)
                 {
-                    meshRenderer.materials[1].SetFloat("_Outline", 0.25f);
+                    meshRenderer.materials[1].SetFloat("_Outline", 0.1f);
                 } 
                 else
                 {
