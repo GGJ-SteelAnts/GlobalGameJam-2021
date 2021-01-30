@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -165,7 +166,7 @@ public class PlayerManager : MonoBehaviour
 
     public void Die()
     {
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     void Animation()
@@ -218,7 +219,7 @@ public class PlayerManager : MonoBehaviour
             {
                 pushPullObject = null;
                 rigidBody.AddForce(
-                    (transform.right * (run ? runSpeed : speed) * 5 * Input.GetAxis("Horizontal") * Time.deltaTime) + 
+                    (transform.right * (run ? runSpeed : speed) * 15 * Input.GetAxis("Horizontal") * Time.deltaTime) + 
                     (transform.up * jump * 10 * Time.deltaTime), 
                     ForceMode.VelocityChange
                 );
@@ -311,6 +312,11 @@ public class PlayerManager : MonoBehaviour
     {
         if (other.tag == "Ground" || other.tag == "Objects")
         {
+            rigidBody.AddForce(
+                (transform.right * (run ? runSpeed : speed) * 10 * Input.GetAxis("Horizontal") * Time.deltaTime) +
+                (transform.up * 10 * Time.deltaTime),
+                ForceMode.VelocityChange
+            );
             onGround = false;
             dash = false;
         }
