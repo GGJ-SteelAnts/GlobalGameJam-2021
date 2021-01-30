@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageObjectsManager : MonoBehaviour
 {
-    public enum ObjectType { Object, HideSpikes, ShowSpikes };
+    public enum ObjectType { Object, HideSpikes, ShowSpikes, StaticSaw, RidingSaw };
     public ObjectType objectType = ObjectType.Object;
     private Animation animation;
     private bool animate = false;
@@ -13,6 +13,8 @@ public class DamageObjectsManager : MonoBehaviour
     public float damage = 10f;
     public float damageRate = 5f;
     private float actualDamageRate = 0f;
+    private bool interact = false;
+    private PlayerManager playerManager;
 
     void Start()
     {
@@ -22,6 +24,51 @@ public class DamageObjectsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (interact)
+        {
+            if (objectType == ObjectType.HideSpikes)
+            {
+                if (!animate)
+                {
+                    animation["Spikes"].speed = 1f;
+                    animation["Spikes"].normalizedTime = 0f;
+                    animation.Play("Spikes");
+                    animate = true;
+                }
+            }
+
+            if (objectType == ObjectType.ShowSpikes)
+            {
+                if (actualDamageRate < Time.time)
+                {
+                    actualDamageRate = Time.time + damageRate;
+                    playerManager.damage(damage, instaKill);
+                }
+            }
+
+            if (objectType == ObjectType.StaticSaw)
+            {
+                Debug.Log(!animation.isPlaying);
+                if (!animation.isPlaying)
+                {
+                    animation.Play("Saw");
+                }
+                if (actualDamageRate < Time.time)
+                {
+                    actualDamageRate = Time.time + damageRate;
+                    playerManager.damage(damage, instaKill);
+                }
+            }
+
+            if (objectType == ObjectType.RidingSaw)
+            {
+                if (actualDamageRate < Time.time)
+                {
+                    actualDamageRate = Time.time + damageRate;
+                    playerManager.damage(damage, instaKill);
+                }
+            }
+        }
     }
 
     public void damagePlayer(PlayerManager playerManager)
@@ -35,28 +82,19 @@ public class DamageObjectsManager : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (objectType == ObjectType.HideSpikes)
+        if (other.gameObject.tag == "Player")
         {
-            if (other.gameObject.tag == "Player" && !animate)
-            {
-                Debug.Log(other.tag);
-                animation["Spikes"].speed = 1f;
-                animation["Spikes"].normalizedTime = 0f;
-                animation.Play("Spikes");
-                animate = true;
-            }
+            interact = true;
+            playerManager = other.gameObject.GetComponent<PlayerManager>();
         }
+    }
 
-        if (objectType == ObjectType.ShowSpikes)
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
         {
-            if (other.gameObject.tag == "Player")
-            {
-                if (actualDamageRate < Time.time)
-                {
-                    actualDamageRate = Time.time + damageRate;
-                    other.gameObject.GetComponent<PlayerManager>().damage(damage, instaKill);
-                }
-            }
+            interact = false;
+            playerManager = null;
         }
     }
 

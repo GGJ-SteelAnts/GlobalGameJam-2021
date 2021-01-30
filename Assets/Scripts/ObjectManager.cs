@@ -30,7 +30,7 @@ public class ObjectManager : MonoBehaviour
             {
                 if (Input.GetKeyUp(KeyCode.E))
                 {
-                    if (playerManager.GetPushPullObject() == null)
+                    if (playerManager.GetPushPullObject() == null && playerManager.activeAbility.Count > 0 && playerManager.activeAbility[0] == 2)
                     {
                         playerManager.SetPushPullObject(this.gameObject);
                         meshRenderer.materials[1].SetColor("_OutlineColor", new Color(0.5568628f, 0.3785397f, 0.1176471f));
@@ -68,8 +68,15 @@ public class ObjectManager : MonoBehaviour
             Vector3 hit = collision.contacts[0].normal;
             if (hit.x != 0 && hit.y == 0)
             {
-                meshRenderer.materials[1].SetFloat("_Outline", 0.25f);
                 playerManager = collision.gameObject.GetComponent<PlayerManager>();
+                if (playerManager.activeAbility.Count > 0 && playerManager.activeAbility[0] == 2)
+                {
+                    meshRenderer.materials[1].SetFloat("_Outline", 0.25f);
+                } 
+                else
+                {
+                    meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
+                }
                 interact = true;
             }
         }
