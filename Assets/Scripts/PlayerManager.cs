@@ -48,8 +48,8 @@ public class PlayerManager : MonoBehaviour
         saveSpeed = speed;
         saveRunSpeed = runSpeed;
         saveJump = jump;
-        saveSize = playerAnimator.transform.localScale;
-        savePosition = playerAnimator.transform.localPosition;
+        saveSize = transform.localScale;
+        savePosition = transform.localPosition;
         saveCameraPosition = Camera.main.transform.localPosition;
     }
 
@@ -60,7 +60,7 @@ public class PlayerManager : MonoBehaviour
         {
             Application.Quit(0);
         }
-        if (actualHealth <= 0)
+        if (actualHealth <= 0 || gameObject.transform.position.y < -400.0f)
         {
             playerAnimator.Play("Die");
         }
@@ -88,7 +88,9 @@ public class PlayerManager : MonoBehaviour
         if (startEating)
         {
             float stepSmaller = 0.8f * Time.deltaTime;
-            powerCubeManager.transform.localScale = Vector3.Slerp(powerCubeManager.transform.localScale, new Vector3(0.01f, 0.01f, 0.01f), stepSmaller);
+            if (powerCubeManager != null) {
+                powerCubeManager.transform.localScale = Vector3.Slerp(powerCubeManager.transform.localScale, new Vector3(0.01f, 0.01f, 0.01f), stepSmaller);
+            }
         }
     }
 
@@ -285,19 +287,19 @@ public class PlayerManager : MonoBehaviour
             actualPowerTimes[powerType.GetHashCode() - 1] = Time.time + powerTime;
             if (powerType == PowerCubeManager.PowerType.Bigger)
             {
-                saveSize = playerAnimator.transform.localScale;
-                savePosition = playerAnimator.transform.localPosition;
+                saveSize = transform.localScale;
+                savePosition = transform.localPosition;
                 saveCameraPosition = Camera.main.transform.localPosition;
 
-                playerAnimator.transform.localScale = new Vector3(
-                    playerAnimator.transform.localScale.x + power,
-                    playerAnimator.transform.localScale.y + power,
-                    playerAnimator.transform.localScale.z + power
+                transform.localScale = new Vector3(
+                    transform.localScale.x + power,
+                    transform.localScale.y + power,
+                    transform.localScale.z + power
                 );
-                playerAnimator.transform.localPosition = new Vector3(
-                    playerAnimator.transform.localPosition.x,
-                    playerAnimator.transform.localPosition.y + power * 2,
-                    playerAnimator.transform.localPosition.z
+                transform.localPosition = new Vector3(
+                    transform.localPosition.x,
+                    transform.localPosition.y + power * 2,
+                    transform.localPosition.z
                 );
                 Camera.main.transform.localPosition = new Vector3(
                     Camera.main.transform.localPosition.x,
@@ -327,8 +329,8 @@ public class PlayerManager : MonoBehaviour
     {
         if (actualPowerTimes[0] != 0f && actualPowerTimes[0] < Time.time)
         {
-            playerAnimator.transform.localScale = saveSize;
-            playerAnimator.transform.localPosition = savePosition;
+            transform.localScale = saveSize;
+            transform.localPosition = savePosition;
             Camera.main.transform.localPosition = saveCameraPosition;
             actualPowerTimes[0] = 0f;
         }
