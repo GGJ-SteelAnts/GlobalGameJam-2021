@@ -35,8 +35,10 @@ public class PlayerManager : MonoBehaviour
     private float saveRunSpeed;
     private float saveJump;
     private Vector3 saveSize;
+    private Vector3 saveNewSize;
     private Vector3 savePosition;
     private Vector3 saveCameraPosition;
+    private float savePower;
 
     // Start is called before the first frame update
     void Start()
@@ -49,8 +51,6 @@ public class PlayerManager : MonoBehaviour
         saveRunSpeed = runSpeed;
         saveJump = jump;
         saveSize = transform.localScale;
-        savePosition = transform.localPosition;
-        saveCameraPosition = Camera.main.transform.localPosition;
     }
 
     // Update is called once per frame
@@ -91,6 +91,11 @@ public class PlayerManager : MonoBehaviour
             if (powerCubeManager != null) {
                 powerCubeManager.transform.localScale = Vector3.Slerp(powerCubeManager.transform.localScale, new Vector3(0.01f, 0.01f, 0.01f), stepSmaller);
             }
+        }
+
+        if (actualPowerTimes[0] != 0f && actualPowerTimes[0] > Time.time)
+        {
+            transform.localScale = Vector3.Slerp(transform.localScale, saveNewSize, 1 * Time.deltaTime);
         }
     }
 
@@ -288,24 +293,22 @@ public class PlayerManager : MonoBehaviour
             if (powerType == PowerCubeManager.PowerType.Bigger)
             {
                 saveSize = transform.localScale;
-                savePosition = transform.localPosition;
-                saveCameraPosition = Camera.main.transform.localPosition;
-
-                transform.localScale = new Vector3(
+                savePower = power;
+                saveNewSize = new Vector3(
+                    transform.localScale.x + savePower,
+                    transform.localScale.y + savePower,
+                    transform.localScale.z + savePower
+                );
+                /*transform.localScale = new Vector3(
                     transform.localScale.x + power,
                     transform.localScale.y + power,
                     transform.localScale.z + power
-                );
-                transform.localPosition = new Vector3(
+                );*/
+                /*transform.localPosition = new Vector3(
                     transform.localPosition.x,
                     transform.localPosition.y + power * 2,
                     transform.localPosition.z
-                );
-                Camera.main.transform.localPosition = new Vector3(
-                    Camera.main.transform.localPosition.x,
-                    Camera.main.transform.localPosition.y,
-                    Camera.main.transform.localPosition.z - power * 2
-                );
+                );*/
 
             }
             else if (powerType == PowerCubeManager.PowerType.Faster)
@@ -329,10 +332,10 @@ public class PlayerManager : MonoBehaviour
     {
         if (actualPowerTimes[0] != 0f && actualPowerTimes[0] < Time.time)
         {
-            transform.localScale = saveSize;
-            transform.localPosition = savePosition;
-            Camera.main.transform.localPosition = saveCameraPosition;
-            actualPowerTimes[0] = 0f;
+            transform.localScale = Vector3.Slerp(transform.localScale, saveSize, 1 * Time.deltaTime);
+            if (transform.localScale == saveSize) {
+                actualPowerTimes[0] = 0f;
+            }
         }
         if (actualPowerTimes[1] != 0f && actualPowerTimes[1] < Time.time)
         {
