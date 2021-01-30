@@ -354,9 +354,9 @@ public class PlayerManager : MonoBehaviour
             dubleJump = true;
             dash = false;
         }
-        powerCubeManager = other.gameObject.GetComponent<PowerCubeManager>();
-        if (powerCubeManager != null)
+        if (other.gameObject.GetComponent<PowerCubeManager>() != null)
         {
+            powerCubeManager = other.gameObject.GetComponent<PowerCubeManager>();
             interact = true;
         }
     }
