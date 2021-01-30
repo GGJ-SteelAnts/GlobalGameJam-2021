@@ -20,6 +20,10 @@ public class PlayerManager : MonoBehaviour
     public List<int> activeAbility = new List<int>(); //without ability=0 or null, dubleJump = 1, push/pull = 2, dash = 3
     private bool dubleJump = true;
     private GameObject pushPullObject;
+    public float dashPower = 40f;
+    public float dashTime = 0.2f;
+    private float actualDashTime;
+    private int dashButton;
 
     private bool startEating = false;
 
@@ -84,6 +88,45 @@ public class PlayerManager : MonoBehaviour
                     pushPullObject.transform.position +
                     (pushPullObject.transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
                 );
+            }
+        }
+        else if (activeAbility.Count > 0 && activeAbility[0] == 3)
+        {
+            if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A)) {
+                if (actualDashTime < Time.time)
+                {
+                    if (Input.GetKeyUp(KeyCode.D))
+                    {
+                        dashButton = 1;
+                    }
+                    else if (Input.GetKeyUp(KeyCode.A))
+                    {
+                        dashButton = 2;
+                    }
+                    actualDashTime = Time.time + dashTime;
+                }
+                else
+                {
+                    if (dashButton == 1 && Input.GetKeyUp(KeyCode.D)) {
+                        rigidBody.AddForce(
+                            (transform.right * dashPower * 10 * 5 * 1 * Time.deltaTime) +
+                            (transform.up * 1 * 10 * Time.deltaTime),
+                            ForceMode.VelocityChange
+                        );
+                        dashButton = 0;
+                        actualDashTime = Time.time - 1f;
+                    } 
+                    else if (dashButton == 2 && Input.GetKeyUp(KeyCode.A))
+                    {
+                        rigidBody.AddForce(
+                            (transform.right * dashPower * 10 * 5 * -1 * Time.deltaTime) +
+                            (transform.up * 1 * 10 * Time.deltaTime),
+                            ForceMode.VelocityChange
+                        );
+                        dashButton = 0;
+                        actualDashTime = Time.time - 1f;
+                    }
+                }
             }
         }
     }

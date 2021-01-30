@@ -320,13 +320,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094923891560833916, guid: e4d82994b58b7304b91c915c597b71f8,
         type: 3}
+      propertyPath: dashTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7094923891560833916, guid: e4d82994b58b7304b91c915c597b71f8,
+        type: 3}
       propertyPath: activeAbility.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7094923891560833916, guid: e4d82994b58b7304b91c915c597b71f8,
         type: 3}
       propertyPath: activeAbility.Array.data[0]
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7094923891560833917, guid: e4d82994b58b7304b91c915c597b71f8,
         type: 3}
