@@ -245,7 +245,6 @@ public class PlayerManager : MonoBehaviour
 
     public void ActivePowerCube(float power, float powerTime, PowerCubeManager.PowerType powerType, string nextSceneName = "")
     {
-        Debug.Log((powerType.GetHashCode() - 1));
         if ((powerType.GetHashCode() - 1) == 3)
         {
             SceneManager.LoadScene(nextSceneName);

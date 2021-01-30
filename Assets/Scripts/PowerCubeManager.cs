@@ -9,7 +9,6 @@ public class PowerCubeManager : MonoBehaviour
     public PowerType powerType = PowerType.Nothing;
     public float powerTime = 5f;
     public float powerUnit = 10f;
-    private bool interact = false;
     public string nextSceneName;
     private MeshRenderer meshRenderer;
 
@@ -45,7 +44,6 @@ public class PowerCubeManager : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             meshRenderer.materials[1].SetFloat("_Outline", 0.4f);
-            interact = true;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -53,7 +51,6 @@ public class PowerCubeManager : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
-            interact = false;
         }
     }
 }
