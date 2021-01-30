@@ -48,8 +48,6 @@ public class MainMenu : MonoBehaviour
             // Show results as text
             Debug.Log(www.downloadHandler.text);
             ScoreText.text = www.downloadHandler.text;
-            // Or retrieve results as binary data
-            byte[] results = www.downloadHandler.data;
         }
     }
 }
