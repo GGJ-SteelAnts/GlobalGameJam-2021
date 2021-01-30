@@ -12,6 +12,9 @@ public class DamageObjectsManager : MonoBehaviour
     public bool instaKill = false;
     public float damage = 10f;
     public float damageRate = 5f;
+    public Transform fromPosition;
+    public Transform toPosition;
+    private bool back = false;
     private float actualDamageRate = 0f;
     private bool interact = false;
     private PlayerManager playerManager;
@@ -48,10 +51,9 @@ public class DamageObjectsManager : MonoBehaviour
 
             if (objectType == ObjectType.StaticSaw)
             {
-                Debug.Log(!animation.isPlaying);
                 if (!animation.isPlaying)
                 {
-                    animation.Play("Saw");
+                    animation.Play("SawA"); 
                 }
                 if (actualDamageRate < Time.time)
                 {
@@ -66,6 +68,30 @@ public class DamageObjectsManager : MonoBehaviour
                 {
                     actualDamageRate = Time.time + damageRate;
                     playerManager.damage(damage, instaKill);
+                }
+            }
+        }
+
+        if (objectType == ObjectType.RidingSaw)
+        {
+            if (fromPosition != null && toPosition != null)
+            {
+                if (this.transform.localPosition == fromPosition.localPosition)
+                {
+                    back = true;
+                } 
+                else if (this.transform.localPosition == toPosition.localPosition)
+                {
+                    back = false;
+                }
+
+                if (back)
+                {
+                    this.transform.localPosition = Vector3.MoveTowards(this.transform.localPosition, toPosition.localPosition, 5 * Time.deltaTime);
+                } 
+                else
+                {
+                    this.transform.localPosition = Vector3.MoveTowards(this.transform.localPosition, fromPosition.localPosition, 5 * Time.deltaTime);
                 }
             }
         }
