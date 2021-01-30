@@ -24,6 +24,7 @@ public class PlayerManager : MonoBehaviour
     public float dashTime = 0.2f;
     private float actualDashTime;
     private int dashButton;
+    private bool dash = false;
 
     private bool startEating = false;
 
@@ -92,7 +93,7 @@ public class PlayerManager : MonoBehaviour
         }
         else if (activeAbility.Count > 0 && activeAbility[0] == 3)
         {
-            if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A)) {
+            if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !dash) {
                 if (actualDashTime < Time.time)
                 {
                     if (Input.GetKeyUp(KeyCode.D))
@@ -113,6 +114,7 @@ public class PlayerManager : MonoBehaviour
                             (transform.up * 1 * 10 * Time.deltaTime),
                             ForceMode.VelocityChange
                         );
+                        dash = true;
                         dashButton = 0;
                         actualDashTime = Time.time - 1f;
                     } 
@@ -123,6 +125,7 @@ public class PlayerManager : MonoBehaviour
                             (transform.up * 1 * 10 * Time.deltaTime),
                             ForceMode.VelocityChange
                         );
+                        dash = true;
                         dashButton = 0;
                         actualDashTime = Time.time - 1f;
                     }
@@ -300,6 +303,7 @@ public class PlayerManager : MonoBehaviour
             rigidBody.MovePosition(transform.position);
             onGround = true;
             dubleJump = true;
+            dash = false;
         }
     }
 
@@ -308,6 +312,7 @@ public class PlayerManager : MonoBehaviour
         if (other.tag == "Ground" || other.tag == "Objects")
         {
             onGround = false;
+            dash = false;
         }
     }
 
@@ -319,6 +324,9 @@ public class PlayerManager : MonoBehaviour
                 rigidBody.MovePosition(transform.position);
                 onGround = true;
                 dubleJump = true;
+            }
+            if (onGround) {
+                dash = false;
             }
         }
     }
