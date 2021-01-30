@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Vasek.unity
+    guid: 127deaeaf7712824f83ee4cba639e023
+  - enabled: 1
+    path: Assets/Scenes/Filip.unity
+    guid: 326dea585e0ea574389529eaae8a0ab4
   m_configObjects: {}

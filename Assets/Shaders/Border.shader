@@ -58,7 +58,7 @@ Shader "Outlined/Silhouette Only" {
 			Name "OUTLINE"
 			Tags { "LightMode" = "Always" }
 			Cull Off
-			Offset 4,4
+			Offset 5,5
 
 
 		// you can choose what kind of blending mode you want for the outline
