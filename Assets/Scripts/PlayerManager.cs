@@ -20,6 +20,7 @@ public class PlayerManager : MonoBehaviour
     private bool interact = false;
 
     public List<int> activeAbility = new List<int>(); //without ability=0 or null, dubleJump = 1, push/pull = 2, dash = 3
+    public List<GameObject> PowerPrefabs = new List<GameObject>(); //dubleJump = 0, push/pull = 1, dash = 2
     private bool dubleJump = true;
     private GameObject pushPullObject;
     public float dashPower = 40f;
@@ -65,8 +66,12 @@ public class PlayerManager : MonoBehaviour
         }
         if (interact)
         {
-            if (powerCubeManager.powerType == PowerCubeManager.PowerType.Artefact)
-            {
+            if (powerCubeManager != null && (
+                powerCubeManager.powerType == PowerCubeManager.PowerType.Artefact ||
+                powerCubeManager.powerType == PowerCubeManager.PowerType.DubleJump ||
+                powerCubeManager.powerType == PowerCubeManager.PowerType.PushPull ||
+                powerCubeManager.powerType == PowerCubeManager.PowerType.Dash
+            )) {
                 if (Input.GetKeyUp(KeyCode.E))
                 {
                     playerAnimator.SetTrigger("Eat");
@@ -229,17 +234,25 @@ public class PlayerManager : MonoBehaviour
         {
             if (rigidBody.velocity.y <= 1 && (onGround || (dubleJump && activeAbility.Count > 0 && activeAbility[0] == 1)))
             {
-                pushPullObject = null;
-                rigidBody.AddForce(
-                    (transform.right * (run ? runSpeed : speed) * 15 * Input.GetAxis("Horizontal") * Time.deltaTime) + 
-                    (transform.up * jump * 10 * Time.deltaTime), 
-                    ForceMode.VelocityChange
-                );
                 if (!onGround)
                 {
                     dubleJump = false;
                 }
+                pushPullObject = null;
+                rigidBody.AddForce(
+                    (transform.right * (run ? runSpeed : speed) * 5 * Input.GetAxis("Horizontal") * Time.deltaTime) + 
+                    (transform.up * jump * 10 * Time.deltaTime), 
+                    ForceMode.VelocityChange
+                );
             }
+        }
+    }
+
+    private void DropPower()
+    {
+        if (activeAbility.Count > 0 && activeAbility[0] != 0)
+        {
+            Instantiate(PowerPrefabs[activeAbility[0] - 1], new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z + 0.5f), PowerPrefabs[activeAbility[0] - 1].transform.rotation);
         }
     }
 
@@ -248,6 +261,24 @@ public class PlayerManager : MonoBehaviour
         if ((powerType.GetHashCode() - 1) == 3)
         {
             SceneManager.LoadScene(nextSceneName);
+        }
+        else if ((powerType.GetHashCode() - 1) == 4)
+        {
+            DropPower();
+            //doubleJump
+            activeAbility[0] = 1;
+        }
+        else if ((powerType.GetHashCode() - 1) == 5)
+        {
+            DropPower();
+            //pushpull
+            activeAbility[0] = 2;
+        }
+        else if ((powerType.GetHashCode() - 1) == 6)
+        {
+            DropPower();
+            //dash
+            activeAbility[0] = 3;
         }
         else if (actualPowerTimes.Length <= (powerType.GetHashCode()) || actualPowerTimes[powerType.GetHashCode() - 1] < Time.time) 
         {
@@ -335,7 +366,7 @@ public class PlayerManager : MonoBehaviour
         if (other.tag == "Ground" || other.tag == "Objects")
         {
             rigidBody.AddForce(
-                (transform.right * (run ? runSpeed : speed) * 10 * Input.GetAxis("Horizontal") * Time.deltaTime) +
+                (transform.right * (run ? runSpeed : speed) * 5 * Input.GetAxis("Horizontal") * Time.deltaTime) +
                 (transform.up * 10 * Time.deltaTime),
                 ForceMode.VelocityChange
             );
@@ -344,7 +375,7 @@ public class PlayerManager : MonoBehaviour
         }
         if (other.gameObject.GetComponent<PowerCubeManager>()  != null)
         {
-            interact = true;
+            interact = false;
         }
     }
 

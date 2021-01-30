@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PowerCubeManager : MonoBehaviour
 {
-    public enum PowerType {Nothing, Bigger, Faster, Jumper, Artefact};
+    public enum PowerType {Nothing, Bigger, Faster, Jumper, Artefact, DubleJump, PushPull, Dash};
     public PowerType powerType = PowerType.Nothing;
     public float powerTime = 5f;
     public float powerUnit = 10f;
@@ -25,7 +25,7 @@ public class PowerCubeManager : MonoBehaviour
         {
             GetComponentInChildren<MeshRenderer>().material.color = Color.green;
         }
-        else if (powerType == PowerType.Artefact)
+        else if (powerType == PowerType.Artefact || powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash)
         {
             meshRenderer = GetComponentInChildren<MeshRenderer>();
             meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
@@ -43,14 +43,24 @@ public class PowerCubeManager : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            meshRenderer.materials[1].SetFloat("_Outline", 0.4f);
+            if (powerType == PowerType.Artefact)
+            {
+                meshRenderer.materials[1].SetFloat("_Outline", 0.4f);
+            }
+            else if (powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash)
+            {
+                meshRenderer.materials[1].SetFloat("_Outline", 0.01f);
+            }
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
+            if (powerType == PowerType.Artefact || powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash)
+            {
+                meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
+            }
         }
     }
 }

@@ -336,6 +336,7 @@ MonoBehaviour:
   actualHealth: 100
   onGround: 1
   activeAbility: 00000000
+  PowerPrefabs: []
   dashPower: 40
   dashTime: 0.2
 --- !u!95 &7009705026125325791
