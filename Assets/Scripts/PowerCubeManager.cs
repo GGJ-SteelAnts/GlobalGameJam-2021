@@ -37,22 +37,14 @@ public class PowerCubeManager : MonoBehaviour
 
     void Update()
     {
-        if (interact) {
-            if (powerType == PowerType.Artefact)
-            {
-                if (Input.GetKeyUp(KeyCode.E))
-                {
-                    SceneManager.LoadScene(nextSceneName);
-                }
-            }
-        }
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            meshRenderer.materials[1].SetFloat("_Outline", 0.01f);
+            meshRenderer.materials[1].SetFloat("_Outline", 0.4f);
             interact = true;
         }
     }

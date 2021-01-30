@@ -17,6 +17,7 @@ public class PlayerManager : MonoBehaviour
     private Animator playerAnimator;
     private Rigidbody rigidBody;
     private PowerCubeManager powerCubeManager;
+    private bool interact = false;
 
     public List<int> activeAbility = new List<int>(); //without ability=0 or null, dubleJump = 1, push/pull = 2, dash = 3
     private bool dubleJump = true;
@@ -61,6 +62,17 @@ public class PlayerManager : MonoBehaviour
         if (actualHealth <= 0)
         {
             playerAnimator.Play("Die");
+        }
+        if (interact)
+        {
+            if (powerCubeManager.powerType == PowerCubeManager.PowerType.Artefact)
+            {
+                if (Input.GetKeyUp(KeyCode.E))
+                {
+                    playerAnimator.SetTrigger("Eat");
+                    interact = false;
+                }
+            }
         }
         AbilityAction();
         DeactivePowerCube();
@@ -231,9 +243,15 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    public void ActivePowerCube(float power, float powerTime, PowerCubeManager.PowerType powerType)
+    public void ActivePowerCube(float power, float powerTime, PowerCubeManager.PowerType powerType, string nextSceneName = "")
     {
-        if (actualPowerTimes.Length <= (powerType.GetHashCode()) || actualPowerTimes[powerType.GetHashCode() - 1] < Time.time) {
+        Debug.Log((powerType.GetHashCode() - 1));
+        if ((powerType.GetHashCode() - 1) == 3)
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else if (actualPowerTimes.Length <= (powerType.GetHashCode()) || actualPowerTimes[powerType.GetHashCode() - 1] < Time.time) 
+        {
             actualPowerTimes[powerType.GetHashCode() - 1] = Time.time + powerTime;
             if (powerType == PowerCubeManager.PowerType.Bigger)
             {
@@ -306,6 +324,11 @@ public class PlayerManager : MonoBehaviour
             dubleJump = true;
             dash = false;
         }
+        powerCubeManager = other.gameObject.GetComponent<PowerCubeManager>();
+        if (powerCubeManager != null)
+        {
+            interact = true;
+        }
     }
 
     public void OnTriggerExit(Collider other)
@@ -319,6 +342,10 @@ public class PlayerManager : MonoBehaviour
             );
             onGround = false;
             dash = false;
+        }
+        if (other.gameObject.GetComponent<PowerCubeManager>()  != null)
+        {
+            interact = true;
         }
     }
 
@@ -370,7 +397,7 @@ public class PlayerManager : MonoBehaviour
     public void EndEatPowerCube()
     {
         startEating = false;
-        ActivePowerCube(powerCubeManager.powerUnit, powerCubeManager.powerTime, powerCubeManager.powerType);
+        ActivePowerCube(powerCubeManager.powerUnit, powerCubeManager.powerTime, powerCubeManager.powerType, powerCubeManager.nextSceneName);
         Destroy(powerCubeManager.gameObject);
     }
 }
