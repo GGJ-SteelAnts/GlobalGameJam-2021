@@ -5,16 +5,15 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
 
-    public float speed = 8;
-    public float runSpeed = 20;
-    public float rotateSpeed = 5;
+    public float speed = 25;
+    public float runSpeed = 50;
     public float mouseSensitive = 100;
-    public float jump = 5;
-    private Vector3 jumpPower = new Vector3();
+    public float jump = 30;
     public bool onGround = false;
     private bool run = false;
     private Camera playerCamera;
     private Rigidbody rigidBody;
+    public GameObject playerModel;
 
     // Start is called before the first frame update
     void Start()
@@ -30,9 +29,14 @@ public class PlayerManager : MonoBehaviour
         {
             Application.Quit(0);
         }
-        Jump();
         Move();
         RunSwitch();
+        Animation();
+    }
+
+    private void FixedUpdate()
+    {
+        Jump();
     }
 
     void RunSwitch()
@@ -47,22 +51,41 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    void Animation()
+    {
+        float localSpeed = 5f;
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            playerModel.transform.rotation = Quaternion.Lerp(
+                playerModel.transform.rotation,
+                Quaternion.Euler(playerModel.transform.eulerAngles.x, 0f, playerModel.transform.eulerAngles.z),
+                localSpeed * Time.deltaTime
+            );
+        }
+        else if (Input.GetAxis("Horizontal") < 0)
+        {
+            playerModel.transform.rotation = Quaternion.Lerp(
+                playerModel.transform.rotation,
+                Quaternion.Euler(playerModel.transform.eulerAngles.x, -180f, playerModel.transform.eulerAngles.z),
+                localSpeed * Time.deltaTime
+            );
+        }
+    }
+
     void Move()
     {
         rigidBody.MovePosition(
             transform.position +
-            (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime) +
-            jumpPower
+            (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
         );
     }
 
     void Jump()
     {
-        Debug.Log(rigidBody.velocity.y);
         if (Input.GetAxisRaw("Jump") > 0) {
-            if (rigidBody.velocity.y <= 2 && onGround)
+            if (rigidBody.velocity.y <= 1 && onGround)
             {
-                jumpPower = transform.up * jump * Time.deltaTime;
+                rigidBody.AddForce(transform.up * jump * 10 * Time.deltaTime, ForceMode.VelocityChange);
             }
         }
     }
@@ -71,7 +94,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (other.tag == "Ground" || other.tag == "Objects")
         {
-            jumpPower = Vector3.zero;
+            rigidBody.MovePosition(transform.position);
             onGround = true;
         }
     }
@@ -81,6 +104,18 @@ public class PlayerManager : MonoBehaviour
         if (other.tag == "Ground" || other.tag == "Objects")
         {
             onGround = false;
+        }
+    }
+
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Ground" || other.tag == "Objects")
+        {
+            if (rigidBody.velocity.y <= 1 && !onGround)
+            {
+                rigidBody.MovePosition(transform.position);
+                onGround = true;
+            }
         }
     }
 }
