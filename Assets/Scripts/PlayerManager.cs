@@ -17,6 +17,9 @@ public class PlayerManager : MonoBehaviour
     private Rigidbody rigidBody;
     private PowerCubeManager powerCubeManager;
 
+    public List<int> activeAbility = new List<int>(); //without ability=0 or null, dubleJump = 1, push/pull = 2, dash = 3
+    private bool dubleJump = true;
+
     private bool startEating = false;
 
     private float saveSpeed;
@@ -89,7 +92,7 @@ public class PlayerManager : MonoBehaviour
     void Animation()
     {
         float localSpeed = 5f;
-        if (Input.GetAxis("Horizontal") > 0 && onGround)
+        if (Input.GetAxis("Horizontal") > 0)
         {
             playerAnimator.SetBool("Walk", true);
             playerAnimator.transform.rotation = Quaternion.Lerp(
@@ -98,7 +101,7 @@ public class PlayerManager : MonoBehaviour
                 localSpeed * Time.deltaTime
             );
         }
-        else if (Input.GetAxis("Horizontal") < 0 && onGround)
+        else if (Input.GetAxis("Horizontal") < 0)
         {
             playerAnimator.SetBool("Walk", true);
             playerAnimator.transform.rotation = Quaternion.Lerp(
@@ -127,13 +130,17 @@ public class PlayerManager : MonoBehaviour
     {
         if (Input.GetAxisRaw("Jump") > 0)
         {
-            if (rigidBody.velocity.y <= 1 && onGround)
+            if (rigidBody.velocity.y <= 1 && (onGround || (dubleJump && activeAbility.Count > 0 && activeAbility[0] == 1)))
             {
                 rigidBody.AddForce(
                     (transform.right * (run ? runSpeed : speed) * 5 * Input.GetAxis("Horizontal") * Time.deltaTime) + 
                     (transform.up * jump * 10 * Time.deltaTime), 
                     ForceMode.VelocityChange
                 );
+                if (!onGround)
+                {
+                    dubleJump = false;
+                }
             }
         }
     }
@@ -210,6 +217,7 @@ public class PlayerManager : MonoBehaviour
         {
             rigidBody.MovePosition(transform.position);
             onGround = true;
+            dubleJump = true;
         }
     }
 
@@ -228,6 +236,7 @@ public class PlayerManager : MonoBehaviour
             if (rigidBody.velocity.y <= 1 && !onGround) {
                 rigidBody.MovePosition(transform.position);
                 onGround = true;
+                dubleJump = true;
             }
         }
     }
