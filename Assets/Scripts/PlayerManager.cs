@@ -249,7 +249,6 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetAxis("Horizontal") > 0)
         {
             playerAnimator.SetBool("Walk", true);
-            FindObjectOfType<AudioManager>().Play("Walk");
             if (pushPullObject == null) {
                 playerAnimator.transform.rotation = Quaternion.Lerp(
                     playerAnimator.transform.rotation,
@@ -261,7 +260,6 @@ public class PlayerManager : MonoBehaviour
         else if (Input.GetAxis("Horizontal") < 0)
         {
             playerAnimator.SetBool("Walk", true);
-            FindObjectOfType<AudioManager>().Play("Walk");
             if (pushPullObject == null)
             {
                 playerAnimator.transform.rotation = Quaternion.Lerp(
@@ -279,6 +277,16 @@ public class PlayerManager : MonoBehaviour
 
     void Move()
     {
+        if (Input.GetAxis("Horizontal") != 0)
+        {
+            if (!run) {
+                FindObjectOfType<AudioManager>().Play("Walk", true);
+            }
+            else
+            {
+                FindObjectOfType<AudioManager>().Play("Run", true);
+            }
+        }
         rigidBody.MovePosition(
             transform.position +
             (onLadder && activeAbility.Count > 0 && activeAbility[0] == 4 ? (transform.up * speed * Input.GetAxis("Vertical") * Time.deltaTime) : Vector3.zero) +
