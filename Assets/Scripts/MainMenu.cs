@@ -9,9 +9,10 @@ using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
-    public TMPro.TextMeshProUGUI ScoreText;
+    public TMPro.TextMeshProUGUI ScoreText = null;
+    public TMPro.TextMeshProUGUI ScoreOneLineText = null;
+
     public InputField name;
-    public TMPro.TextMeshProUGUI score;
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +22,10 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (score != null)
-            score.text = "Score: " + DataManager.Score().ToString();
+        if (ScoreOneLineText != null){
+            Debug.Log("Score 2 ");
+            ScoreOneLineText.text = "Score: " + DataManager.Score().ToString();
+        }
     }
 
     public void PlayGame()
