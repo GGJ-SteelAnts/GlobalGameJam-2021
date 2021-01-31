@@ -4091,7 +4091,7 @@ PrefabInstance:
     - target: {fileID: 2773067093461657725, guid: 712671f8cf5fa684cbcb1159d45b0057,
         type: 3}
       propertyPath: nextSceneName
-      value: Hans
+      value: Level2_Release
       objectReference: {fileID: 0}
     - target: {fileID: 2773067093461657726, guid: 712671f8cf5fa684cbcb1159d45b0057,
         type: 3}
@@ -5542,6 +5542,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3972560853011912468, guid: e4d82994b58b7304b91c915c597b71f8,
+        type: 3}
+      propertyPath: clips.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ebff1b1b6619bdf48a334db25b73db57, type: 3}
     - target: {fileID: 7094923891560833857, guid: e4d82994b58b7304b91c915c597b71f8,
         type: 3}
       propertyPath: m_Name

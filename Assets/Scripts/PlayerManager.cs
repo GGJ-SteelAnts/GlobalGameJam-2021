@@ -119,7 +119,6 @@ public class PlayerManager : MonoBehaviour
         if (!cannotMove && (!onLadder || (onLadder && (activeAbility.Count < 0 || activeAbility[0] != 4))))
         {
             Jump();
-            FindObjectOfType<AudioManager>().Play("Jump");
         }
     }
 
@@ -295,6 +294,7 @@ public class PlayerManager : MonoBehaviour
                 {
                     dubleJump = false;
                 }
+                FindObjectOfType<AudioManager>().Play("Jump");
                 pushPullObject = null;
                 rigidBody.AddForce(
                     (transform.up * jump * 10 * Time.deltaTime), 
@@ -365,7 +365,6 @@ public class PlayerManager : MonoBehaviour
 
                 speed += power;
                 runSpeed += power;
-                FindObjectOfType<AudioManager>().Play("Jump");
             }
             else if (powerType == PowerCubeManager.PowerType.Jumper)
             {
