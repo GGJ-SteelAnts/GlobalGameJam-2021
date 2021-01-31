@@ -14,22 +14,6 @@ public class PowerCubeManager : MonoBehaviour
 
     void Start()
     {
-        if (powerType == PowerType.DubleJump)
-        {
-            GetComponentInChildren<MeshRenderer>().material.color = Color.cyan;
-        }
-        if (powerType == PowerType.PushPull)
-        {
-            GetComponentInChildren<MeshRenderer>().material.color = Color.yellow;
-        }
-        if (powerType == PowerType.Dash)
-        {
-            GetComponentInChildren<MeshRenderer>().material.color = Color.white;
-        }
-        if (powerType == PowerType.Ladder)
-        {
-            GetComponentInChildren<MeshRenderer>().material.color = Color.black;
-        }
         if (powerType == PowerType.Bigger) {
             GetComponentInChildren<MeshRenderer>().material.color = Color.blue;
         } 
@@ -44,6 +28,7 @@ public class PowerCubeManager : MonoBehaviour
         else if (powerType == PowerType.Artefact || powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash || powerType == PowerType.Ladder)
         {
             meshRenderer = GetComponentInChildren<MeshRenderer>();
+            meshRenderer.materials[0].DisableKeyword("_EMISSION");
             meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
             meshRenderer.materials[1].SetColor("_OutlineColor", new Color(0.5276349f, 0.5566038f, 0.118147f));
         }
@@ -61,11 +46,15 @@ public class PowerCubeManager : MonoBehaviour
         {
             if (powerType == PowerType.Artefact)
             {
+                meshRenderer.materials[0].EnableKeyword("_EMISSION");
+                meshRenderer.materials[0].SetColor("_EmissionColor", new Color(0.2735849f, 0.2018939f, 0.09162514f) * 0.8f);
                 meshRenderer.materials[1].SetFloat("_Outline", 0.4f);
             }
             else if (powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash || powerType == PowerType.Ladder)
             {
-                meshRenderer.materials[1].SetFloat("_Outline", 0.01f);
+                meshRenderer.materials[1].SetFloat("_Outline", 6f);
+                meshRenderer.materials[0].EnableKeyword("_EMISSION");
+                meshRenderer.materials[0].SetColor("_EmissionColor", new Color(0.2735849f, 0.2018939f, 0.09162514f) * 0.8f);
             }
         }
     }
@@ -75,6 +64,7 @@ public class PowerCubeManager : MonoBehaviour
         {
             if (powerType == PowerType.Artefact || powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash || powerType == PowerType.Ladder)
             {
+                meshRenderer.materials[0].DisableKeyword("_EMISSION");
                 meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
             }
         }

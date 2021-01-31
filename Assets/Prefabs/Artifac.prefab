@@ -62,6 +62,22 @@ MonoBehaviour:
   powerTime: 5
   powerUnit: 10
   nextSceneName: Vasek
+--- !u!111 &7403971995892228203
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7318292290777720372}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: caf624c2eeddd1641bef9f2186d098ea, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: caf624c2eeddd1641bef9f2186d098ea, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &7588184672228875109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77,17 +93,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: dbb67ade1acacb046b14f8c82b3d1495,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dbb67ade1acacb046b14f8c82b3d1495,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dbb67ade1acacb046b14f8c82b3d1495,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dbb67ade1acacb046b14f8c82b3d1495,
         type: 3}
@@ -97,7 +113,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: dbb67ade1acacb046b14f8c82b3d1495,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dbb67ade1acacb046b14f8c82b3d1495,
         type: 3}
@@ -156,6 +172,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbb67ade1acacb046b14f8c82b3d1495, type: 3}
+--- !u!1 &7318292290777720372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dbb67ade1acacb046b14f8c82b3d1495,
+    type: 3}
+  m_PrefabInstance: {fileID: 7588184672228875109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7981536033805794446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dbb67ade1acacb046b14f8c82b3d1495,

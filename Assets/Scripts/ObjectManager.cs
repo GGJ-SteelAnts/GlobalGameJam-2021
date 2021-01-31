@@ -35,6 +35,7 @@ public class ObjectManager : MonoBehaviour
         {
             meshRenderer = GetComponent<MeshRenderer>();
         }
+        meshRenderer.materials[0].DisableKeyword("_EMISSION");
         meshRenderer.materials[1].SetFloat ("_Outline", 0.0f);
         meshRenderer.materials[1].SetColor("_OutlineColor", new Color(0.5276349f, 0.5566038f, 0.118147f));
         rigidBody = GetComponent<Rigidbody>();

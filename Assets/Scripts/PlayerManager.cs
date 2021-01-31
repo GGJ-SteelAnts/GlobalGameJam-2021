@@ -59,7 +59,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene(0);
         }
         if (actualHealth <= 0 || gameObject.transform.position.y < -400.0f)
         {
@@ -194,6 +194,7 @@ public class PlayerManager : MonoBehaviour
 
     public void Die()
     {
+        DataManager.Level(SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -272,6 +273,7 @@ public class PlayerManager : MonoBehaviour
     {
         if ((powerType.GetHashCode() - 1) == 3)
         {
+            DataManager.Level(SceneManager.GetSceneByName(nextSceneName).buildIndex);
             SceneManager.LoadScene(nextSceneName);
         }
         else if ((powerType.GetHashCode() - 1) == 4)

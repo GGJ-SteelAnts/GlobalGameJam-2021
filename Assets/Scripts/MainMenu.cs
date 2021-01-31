@@ -43,9 +43,10 @@ public class MainMenu : MonoBehaviour
     {
         WWWForm form = new WWWForm();
         form.AddField("name", name.text);
-        form.AddField("score", 20);
+        form.AddField("score", DataManager.Score().ToString());
 
         StartCoroutine(PostText("dev.steelants.cz/vasek/GGJ2021/GeorgeJones/Server/api.php", form));
+        DataManager.Level(0);
         SceneManager.LoadScene(0);
     }
 
