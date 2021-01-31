@@ -128,6 +128,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3631136014573753165, guid: ba918907807ecda4982b8c9ca799aa42,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724668830599722075, guid: ba918907807ecda4982b8c9ca799aa42,
+        type: 3}
+      propertyPath: m_Text
+      value: "When you take new power\nYou lost your actual \npower, but some times
+        is \nneeded else power. With this Power you can come to block and click E
+        for push and pulls them."
+      objectReference: {fileID: 0}
     - target: {fileID: 4992519963305423117, guid: ba918907807ecda4982b8c9ca799aa42,
         type: 3}
       propertyPath: m_RootOrder
