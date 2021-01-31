@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI ScoreText;
     public InputField name;
+    public TMPro.TextMeshProUGUI score;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,8 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (score != null)
+            score.text = "Score: " + DataManager.Score().ToString();
     }
 
     public void PlayGame()
@@ -27,10 +30,19 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void Credits()
+    public void Score()
     {
         StartCoroutine(GetText("dev.steelants.cz/GGJ2021/GeorgeJones/Server/api.php"));
-        ScoreText.text = "test";
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(DataManager.Level());
     }
 
     public void QuitGame()

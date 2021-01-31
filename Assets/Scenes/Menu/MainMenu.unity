@@ -2064,6 +2064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 748254063}
   name: {fileID: 0}
+  score: {fileID: 0}
 --- !u!114 &989324638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3082,7 +3083,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 989324637}
-        m_MethodName: Credits
+        m_MethodName: Score
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
