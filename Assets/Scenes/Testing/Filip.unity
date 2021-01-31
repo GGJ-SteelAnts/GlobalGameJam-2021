@@ -128,6 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3071880845481565143, guid: ba918907807ecda4982b8c9ca799aa42,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3631136014573753165, guid: ba918907807ecda4982b8c9ca799aa42,
         type: 3}
       propertyPath: m_IsActive
@@ -199,6 +204,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gui
+      objectReference: {fileID: 0}
+    - target: {fileID: 8686362967119548819, guid: ba918907807ecda4982b8c9ca799aa42,
+        type: 3}
+      propertyPath: m_Text
+      value: "You can come to block with=\n Click E button when     \nobject start
+        shaining=\n\n\nThis power give you skill to climb on ladder."
       objectReference: {fileID: 0}
     - target: {fileID: 8686362967541028631, guid: ba918907807ecda4982b8c9ca799aa42,
         type: 3}
