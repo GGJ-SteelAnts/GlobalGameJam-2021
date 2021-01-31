@@ -29,7 +29,7 @@ public class PlayerManager : MonoBehaviour
     private GameObject pushPullObject;
     private float pushPullObjectDistance;
     public float dashPower = 40f;
-    public float dashTime = 0.2f;
+    public float dashTime = 0.3f;
     private float actualDashTime;
     private int dashButton;
     private bool dash = false;
@@ -164,7 +164,7 @@ public class PlayerManager : MonoBehaviour
                     {
                         rigidBody.AddForce(
                             (transform.right * dashPower * 10 * 5 * 1 * Time.deltaTime) +
-                            (transform.up * 1 * 10 * Time.deltaTime),
+                            (transform.up * 2 * 10 * Time.deltaTime),
                             ForceMode.VelocityChange
                         );
                         dash = true;
@@ -175,7 +175,7 @@ public class PlayerManager : MonoBehaviour
                     {
                         rigidBody.AddForce(
                             (transform.right * dashPower * 10 * 5 * -1 * Time.deltaTime) +
-                            (transform.up * 1 * 10 * Time.deltaTime),
+                            (transform.up * 2 * 10 * Time.deltaTime),
                             ForceMode.VelocityChange
                         );
                         dash = true;
