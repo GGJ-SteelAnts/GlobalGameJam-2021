@@ -141,9 +141,9 @@ PrefabInstance:
     - target: {fileID: 4724668830599722075, guid: ba918907807ecda4982b8c9ca799aa42,
         type: 3}
       propertyPath: m_Text
-      value: "When you take new power\nYou lost your actual \npower, but some times
-        is \nneeded else power. With this Power you can come to block and click E
-        for push and pulls them."
+      value: "When you take new power\nYou lost your actual , but \nsome times is
+        needed \nelse power. With this Power you can come to block and click E for
+        push and pulls them."
       objectReference: {fileID: 0}
     - target: {fileID: 4992519963305423117, guid: ba918907807ecda4982b8c9ca799aa42,
         type: 3}
@@ -2734,6 +2734,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3972560853011912468, guid: e4d82994b58b7304b91c915c597b71f8,
+        type: 3}
+      propertyPath: clips.Array.data[0].volume
+      value: 0.048
+      objectReference: {fileID: 0}
     - target: {fileID: 7094923891560833857, guid: e4d82994b58b7304b91c915c597b71f8,
         type: 3}
       propertyPath: m_Name
