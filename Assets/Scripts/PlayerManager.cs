@@ -73,6 +73,7 @@ public class PlayerManager : MonoBehaviour
         {
             cannotMove = true;
             playerAnimator.Play("Die");
+            FindObjectOfType<AudioManager>().Play("lose");
         }
         if (interact)
         {
@@ -85,6 +86,7 @@ public class PlayerManager : MonoBehaviour
             )) {
                 if (Input.GetKeyUp(KeyCode.E))
                 {
+                    FindObjectOfType<AudioManager>().Play("Pickup");
                     playerAnimator.SetTrigger("Eat");
                     interact = false;
                 }
@@ -117,6 +119,7 @@ public class PlayerManager : MonoBehaviour
         if (!cannotMove && (!onLadder || (onLadder && (activeAbility.Count < 0 || activeAbility[0] != 4))))
         {
             Jump();
+            FindObjectOfType<AudioManager>().Play("Jump");
         }
     }
 
@@ -227,6 +230,7 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetAxisRaw("Run") > 0)
         {
             run = true;
+            
         }
         else
         {
@@ -360,6 +364,7 @@ public class PlayerManager : MonoBehaviour
 
                 speed += power;
                 runSpeed += power;
+                FindObjectOfType<AudioManager>().Play("Jump");
             }
             else if (powerType == PowerCubeManager.PowerType.Jumper)
             {

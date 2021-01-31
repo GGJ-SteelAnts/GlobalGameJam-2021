@@ -28,6 +28,7 @@ public class AudioManager : MonoBehaviour
         if (s == null) {
             return;
         }
+        Debug.Log("Sound is playng");
         s.source.Play();
     }
 }
