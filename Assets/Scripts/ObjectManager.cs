@@ -110,7 +110,7 @@ public class ObjectManager : MonoBehaviour
                 playerManager = other.gameObject.GetComponent<PlayerManager>();
                 meshRenderer.materials[0].EnableKeyword("_EMISSION");
                 meshRenderer.materials[0].SetColor("_EmissionColor", new Color(0.2735849f, 0.2018939f, 0.09162514f) * 0.8f);
-                meshRenderer.materials[1].SetFloat("_Outline", 2.5f);
+                meshRenderer.materials[1].SetFloat("_Outline", 0.25f);
                 interact = true;
             }
 
@@ -170,7 +170,7 @@ public class ObjectManager : MonoBehaviour
                 playerManager = collision.gameObject.GetComponent<PlayerManager>();
                 if (playerManager.activeAbility.Count > 0 && playerManager.activeAbility[0] == 2)
                 {
-                    meshRenderer.materials[1].SetFloat("_Outline", 0.1f);
+                    meshRenderer.materials[1].SetFloat("_Outline", 0.01f);
                 } 
                 else
                 {

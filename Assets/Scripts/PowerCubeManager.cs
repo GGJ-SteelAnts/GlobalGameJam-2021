@@ -48,11 +48,11 @@ public class PowerCubeManager : MonoBehaviour
             {
                 meshRenderer.materials[0].EnableKeyword("_EMISSION");
                 meshRenderer.materials[0].SetColor("_EmissionColor", new Color(0.2735849f, 0.2018939f, 0.09162514f) * 0.8f);
-                meshRenderer.materials[1].SetFloat("_Outline", 0.4f);
+                meshRenderer.materials[1].SetFloat("_Outline", 0.04f);
             }
             else if (powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash || powerType == PowerType.Ladder)
             {
-                meshRenderer.materials[1].SetFloat("_Outline", 6f);
+                meshRenderer.materials[1].SetFloat("_Outline",0.6f);
                 meshRenderer.materials[0].EnableKeyword("_EMISSION");
                 meshRenderer.materials[0].SetColor("_EmissionColor", new Color(0.2735849f, 0.2018939f, 0.09162514f) * 0.8f);
             }
