@@ -138,7 +138,7 @@ MonoBehaviour:
   clips:
   - name: MainTheme
     clip: {fileID: 8300000, guid: 23f58ffff5e98424b82e0a34bfeb8a77, type: 3}
-    volume: 0.5
+    volume: 0.25
     pitch: 1
     loop: 1
     source: {fileID: 0}
