@@ -1418,21 +1418,9 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 2.unity
-  m_GameObject: {fileID: 524780037}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -28.226, y: -7.7633, z: 0.12349}
-  m_LocalScale: {x: 0.60841376, y: 0.22818352, z: 0.5722176}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &634512922
-=======
   m_GameObject: {fileID: 347176587}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &374808084
->>>>>>> Stashed changes:Assets/Scenes/Level 2.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3324,51 +3312,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 2.unity
-  m_GameObject: {fileID: 634512922}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -75.973, y: -8.6658, z: 0.80012}
-  m_LocalScale: {x: 0.60841376, y: 0.5722176, z: 0.22818352}
-  m_Children:
-  - {fileID: 1607730470}
-  - {fileID: 1947623627}
-  - {fileID: 1465368453}
-  - {fileID: 1243663661}
-  - {fileID: 74065431}
-  - {fileID: 671579729}
-  - {fileID: 177556038}
-  - {fileID: 917283733}
-  - {fileID: 1137349463}
-  - {fileID: 1912568331}
-  - {fileID: 332046440}
-  - {fileID: 1966543287}
-  - {fileID: 1912263650}
-  - {fileID: 2045778763}
-  - {fileID: 374808085}
-  - {fileID: 1514262525}
-  - {fileID: 38944352}
-  - {fileID: 1457297065}
-  - {fileID: 347176588}
-  - {fileID: 1887722733}
-  - {fileID: 1173872922}
-  - {fileID: 1957061674}
-  - {fileID: 1901446079}
-  - {fileID: 430559830}
-  - {fileID: 253993661}
-  - {fileID: 704587944}
-  - {fileID: 1755661395}
-  - {fileID: 277750316}
-  - {fileID: 983484907}
-  - {fileID: 1315051493}
-  - {fileID: 1014318556}
-  - {fileID: 1094437957}
-  - {fileID: 308319555}
-  - {fileID: 1713558595}
-  - {fileID: 1847264396}
-  - {fileID: 1187500894}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-=======
   m_GameObject: {fileID: 1094437956}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -6.0359, y: -15.719, z: -2.8053}
@@ -3469,7 +3412,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 634512923}
   m_RootOrder: 8
->>>>>>> Stashed changes:Assets/Scenes/Level 2.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1137349464
 BoxCollider:
@@ -4972,17 +4914,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 2.unity
-  m_GameObject: {fileID: 1514262524}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -70.5, y: -33.297, z: -2.8053167}
-  m_LocalScale: {x: 36.006565, y: 1.0000011, z: 11.656721}
-=======
   m_GameObject: {fileID: 1708615056}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -173.333, y: -16.6, z: -2.8053}
   m_LocalScale: {x: 3.294363, y: 0.71362835, z: 7.333479}
->>>>>>> Stashed changes:Assets/Scenes/Level 2.unity
   m_Children: []
   m_Father: {fileID: 634512923}
   m_RootOrder: 47
@@ -6206,38 +6141,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 2.unity
-    - target: {fileID: 7801516489716195989, guid: 4f1a4eb0e633f7740b9c4928cf54ce35,
-        type: 3}
-      propertyPath: field of view
-      value: 12.431462
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.x
-      value: 0.60841376
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.y
-      value: 0.5722176
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.z
-      value: 0.22818352
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalPosition.x
-      value: -28.226
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalPosition.y
-      value: -9.4791
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalPosition.z
-      value: 0.12349
-      objectReference: {fileID: 0}
-=======
->>>>>>> Stashed changes:Assets/Scenes/Level 2.unity
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 597897b562955934fae65d62e0a8e3cd, type: 3}
 --- !u!1 &2045778762
