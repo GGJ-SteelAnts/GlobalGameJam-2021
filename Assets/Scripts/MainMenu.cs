@@ -27,7 +27,7 @@ public class MainMenu : MonoBehaviour
 
     public void Credits()
     {
-        StartCoroutine(GetText("dev.steelants.cz/vasek/GGJ2021/GeorgeJones/Server/api.php"));
+        StartCoroutine(GetText("dev.steelants.cz/GGJ2021/GeorgeJones/Server/api.php"));
         ScoreText.text = "test";
     }
 
