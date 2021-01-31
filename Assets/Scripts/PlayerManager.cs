@@ -29,7 +29,7 @@ public class PlayerManager : MonoBehaviour
     private GameObject pushPullObject;
     private float pushPullObjectDistance;
     public float dashPower = 40f;
-    public float dashTime = 0.3f;
+    public float dashTime = 0.4f;
     private float actualDashTime;
     private int dashButton;
     private bool dash = false;
@@ -114,7 +114,7 @@ public class PlayerManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!cannotMove && !onLadder)
+        if (!cannotMove && (!onLadder || (onLadder && (activeAbility.Count < 0 || activeAbility[0] != 4))))
         {
             Jump();
         }
@@ -274,20 +274,18 @@ public class PlayerManager : MonoBehaviour
 
     void Move()
     {
-        if (onGround || (onLadder && activeAbility.Count > 0 && activeAbility[0] == 4)) {
-            rigidBody.MovePosition(
-                transform.position +
-                (onLadder && activeAbility.Count > 0 && activeAbility[0] == 4 ? (transform.up * speed * Input.GetAxis("Vertical") * Time.deltaTime) : Vector3.zero) +
-                (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
-            );;
-        }
+        rigidBody.MovePosition(
+            transform.position +
+            (onLadder && activeAbility.Count > 0 && activeAbility[0] == 4 ? (transform.up * speed * Input.GetAxis("Vertical") * Time.deltaTime) : Vector3.zero) +
+            (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
+        );;
     }
 
     void Jump()
     {
         if (Input.GetAxisRaw("Jump") > 0)
         {
-            if (rigidBody.velocity.y <= 1 && (onGround || (dubleJump && activeAbility.Count > 0 && activeAbility[0] == 1)))
+            if (rigidBody.velocity.y <= 1 && (onGround || (dubleJump && activeAbility.Count > 0 && activeAbility[0] == 1)) )
             {
                 if (!onGround)
                 {
@@ -295,7 +293,6 @@ public class PlayerManager : MonoBehaviour
                 }
                 pushPullObject = null;
                 rigidBody.AddForce(
-                    (transform.right * (run ? runSpeed : speed) * 5 * Input.GetAxis("Horizontal") * Time.deltaTime) + 
                     (transform.up * jump * 10 * Time.deltaTime), 
                     ForceMode.VelocityChange
                 );
@@ -415,24 +412,8 @@ public class PlayerManager : MonoBehaviour
     {
         if (other.tag == "Ground" || other.tag == "Objects")
         {
-            if (!onLadder) {
-                rigidBody.AddForce(
-                    (transform.right * (run ? runSpeed : speed) * 5 * Input.GetAxis("Horizontal") * Time.deltaTime) +
-                    (transform.up * 10 * Time.deltaTime),
-                    ForceMode.VelocityChange
-                );
-            } 
             onGround = false;
             dash = false;
-        }
-        if (other.gameObject.GetComponent<ObjectManager>() != null)
-        {
-            if (other.gameObject.GetComponent<ObjectManager>().objectType == ObjectManager.ObjectType.Ladder) {
-                rigidBody.AddForce(
-                        (transform.right * (run ? runSpeed : speed) * 2.5f * Input.GetAxis("Horizontal") * Time.deltaTime),
-                        ForceMode.VelocityChange
-                    );
-            }
         }
         if (other.gameObject.GetComponent<PowerCubeManager>()  != null)
         {

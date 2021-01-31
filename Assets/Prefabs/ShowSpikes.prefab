@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectType: 2
-  instaKill: 0
+  instaKill: 1
   damage: 10
   damageRate: 5
   fromPosition: {fileID: 0}
