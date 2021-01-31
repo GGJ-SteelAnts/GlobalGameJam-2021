@@ -152,11 +152,7 @@ Transform:
   m_LocalScale: {x: 3.4940033, y: 1.5813276, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 92
-=======
   m_RootOrder: 93
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2780677
 BoxCollider:
@@ -189,11 +185,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 1010212748793951612, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -253,11 +245,7 @@ Transform:
   m_LocalScale: {x: 3.4940033, y: 4.907025, z: 1.9802314}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 124
-=======
   m_RootOrder: 125
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &7887053
 BoxCollider:
@@ -290,11 +278,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 1010212748793951612, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -480,11 +464,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -544,11 +524,7 @@ Transform:
   m_LocalScale: {x: 8.448245, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 151
-=======
   m_RootOrder: 152
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 18.467001}
 --- !u!65 &18803155
 BoxCollider:
@@ -581,11 +557,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: bf4d0317d916c494f869f9d8d88aa680, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -645,11 +617,7 @@ Transform:
   m_LocalScale: {x: 4.717254, y: 3.4400165, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 156
-=======
   m_RootOrder: 157
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &39673380
 BoxCollider:
@@ -682,11 +650,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -746,15 +710,9 @@ Transform:
   m_LocalScale: {x: 62.721085, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 219
-  m_LocalEulerAnglesHint: {x: -2.8370001, y: 0.671, z: -32.63}
---- !u!65 &42994066
-=======
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 1.9790001, y: 1.348, z: 5.7300005}
 --- !u!65 &49122470
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -938,15 +896,9 @@ Transform:
   m_LocalScale: {x: 1.0904166, y: 28.31168, z: 1.3431108}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 139
-  m_LocalEulerAnglesHint: {x: 0, y: -44.898003, z: 0}
---- !u!65 &62518285
-=======
   m_RootOrder: 150
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.805}
 --- !u!65 &63873525
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -977,11 +929,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1041,15 +989,9 @@ Transform:
   m_LocalScale: {x: 13.418659, y: 0.51622707, z: 1.2713741}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 149
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.805}
---- !u!65 &63873525
-=======
   m_RootOrder: 113
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 37.078003}
 --- !u!65 &64935557
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1080,11 +1022,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 33e524b2c7c45cb4598e3eb143efc76f, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1144,15 +1082,9 @@ Transform:
   m_LocalScale: {x: 0.23837596, y: 12.901637, z: 0.5817405}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 112
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 37.078003}
---- !u!65 &64935557
-=======
   m_RootOrder: 223
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &70960976
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1183,11 +1115,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: f9ab68b7517ed34488cdbbbf976b7ffd, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1247,11 +1175,7 @@ Transform:
   m_LocalScale: {x: 11.729179, y: 31.383411, z: 11.656727}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 94
-=======
   m_RootOrder: 95
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &76950500
 BoxCollider:
@@ -1284,11 +1208,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: d4dd9fc72c1015443979ccf1617ed3f1, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1417,11 +1337,7 @@ Transform:
   m_LocalScale: {x: 6.738126, y: 3.4400165, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 170
-=======
   m_RootOrder: 171
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &90622620
 BoxCollider:
@@ -1583,11 +1499,7 @@ Transform:
   m_LocalScale: {x: 36.09229, y: 0.9715841, z: 11.325438}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 66
-=======
   m_RootOrder: 67
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &102107360
 BoxCollider:
@@ -1806,11 +1718,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: f4caa11616ecb9041b459a020c575a12, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1870,11 +1778,7 @@ Transform:
   m_LocalScale: {x: 22.135443, y: 1.3878114, z: 11.325438}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 173
-=======
   m_RootOrder: 174
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &133307849
 BoxCollider:
@@ -2056,19 +1960,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150542555}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_LocalPosition: {x: 50.18, y: -9.409, z: 1.7}
-  m_LocalScale: {x: 1.0904166, y: 12.901637, z: 1.9791805}
-  m_Children: []
-  m_Father: {fileID: 1699353165}
-  m_RootOrder: 90
-=======
   m_LocalPosition: {x: 50.18, y: -9.409, z: 1.54}
   m_LocalScale: {x: 1.0904166, y: 12.901637, z: 1.9791805}
   m_Children: []
   m_Father: {fileID: 1699353165}
   m_RootOrder: 91
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &150542557
 BoxCollider:
@@ -2194,11 +2090,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2258,11 +2150,7 @@ Transform:
   m_LocalScale: {x: 1.0904166, y: 26.585146, z: 2.1357627}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 83
-=======
   m_RootOrder: 84
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &195960870
 BoxCollider:
@@ -2355,11 +2243,7 @@ Transform:
   m_LocalScale: {x: 1.0103455, y: 6.351495, z: 1}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 99
-=======
   m_RootOrder: 100
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &212974554
 BoxCollider:
@@ -2452,11 +2336,7 @@ Transform:
   m_LocalScale: {x: 17.552914, y: 0.51622707, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 111
-=======
   m_RootOrder: 112
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 37.078003}
 --- !u!65 &217673605
 BoxCollider:
@@ -2489,11 +2369,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 84f36545290558b4999deaf40861d198, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2549,11 +2425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235691594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_LocalPosition: {x: 62.64, y: -54.506, z: -7}
-=======
   m_LocalPosition: {x: 62.64, y: -54.506, z: -7.16}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalScale: {x: 1.0904166, y: 10.26324, z: 3.1472132}
   m_Children: []
   m_Father: {fileID: 1699353165}
@@ -2650,11 +2522,7 @@ Transform:
   m_LocalScale: {x: 0.7943497, y: 0.8580432, z: 1.6502445}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 140
-=======
   m_RootOrder: 141
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: -65.979004, z: 0}
 --- !u!65 &270321655
 BoxCollider:
@@ -2836,13 +2704,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321736897}
   m_LocalRotation: {x: -0, y: -0, z: 0.11579816, w: 0.9932728}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_LocalPosition: {x: 26.12, y: -10.15, z: -2.8053167}
-  m_LocalScale: {x: 0.8332354, y: 1, z: 11.656721}
-=======
   m_LocalPosition: {x: 25.23, y: -8.56, z: -2.8053167}
   m_LocalScale: {x: 1.3865072, y: 1, z: 11.656721}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_Children: []
   m_Father: {fileID: 1699353165}
   m_RootOrder: 54
@@ -2878,11 +2741,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 33e524b2c7c45cb4598e3eb143efc76f, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2942,11 +2801,7 @@ Transform:
   m_LocalScale: {x: 13.418659, y: 0.51622707, z: 1.2713741}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 108
-=======
   m_RootOrder: 109
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -42.108}
 --- !u!65 &331377559
 BoxCollider:
@@ -2979,11 +2834,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 33e524b2c7c45cb4598e3eb143efc76f, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3043,15 +2894,9 @@ Transform:
   m_LocalScale: {x: 1.0904166, y: 13.437381, z: 2.1357627}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 165
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!65 &338822541
-=======
   m_RootOrder: 213
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &333693311
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3136,17 +2981,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_GameObject: {fileID: 342201279}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.039, y: -26.26, z: 2.04}
-  m_LocalScale: {x: 12.542824, y: 2.088486, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1699353165}
-  m_RootOrder: 97
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &342201281
-=======
   m_GameObject: {fileID: 338822539}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -131.3, y: -77.22, z: -2.8053167}
@@ -3156,7 +2990,6 @@ Transform:
   m_RootOrder: 166
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &338822541
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3187,11 +3020,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 6ba5b71cd3a2ff44ea97364fdf9e0dbd, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3284,11 +3113,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3441,15 +3266,9 @@ Transform:
   m_LocalScale: {x: 17.594893, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 211
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 35.174}
---- !u!65 &355338786
-=======
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &353830968
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3633,11 +3452,7 @@ Transform:
   m_LocalScale: {x: 1.0904166, y: 16.524212, z: 1.3431108}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 128
-=======
   m_RootOrder: 129
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &366762995
 BoxCollider:
@@ -3730,11 +3545,7 @@ Transform:
   m_LocalScale: {x: 1.0319846, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 167
-=======
   m_RootOrder: 168
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &368231051
 BoxCollider:
@@ -3827,11 +3638,7 @@ Transform:
   m_LocalScale: {x: 7.40885, y: 1, z: 1.6395642}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 119
-=======
   m_RootOrder: 120
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 26.709002}
 --- !u!65 &368911422
 BoxCollider:
@@ -3864,11 +3671,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 33e524b2c7c45cb4598e3eb143efc76f, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3928,11 +3731,7 @@ Transform:
   m_LocalScale: {x: 17.594893, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 176
-=======
   m_RootOrder: 177
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &388487070
 BoxCollider:
@@ -4058,11 +3857,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4377,11 +4172,7 @@ Transform:
   m_LocalScale: {x: 17.307434, y: 45.526173, z: 11.656727}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 129
-=======
   m_RootOrder: 130
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &424524579
 BoxCollider:
@@ -4474,11 +4265,7 @@ Transform:
   m_LocalScale: {x: 1.0904166, y: 13.437381, z: 1.9791795}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 64
-=======
   m_RootOrder: 65
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &428044346
 BoxCollider:
@@ -4697,11 +4484,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 1010212748793951612, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4761,15 +4544,9 @@ Transform:
   m_LocalScale: {x: 52.470932, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 109
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -42.108}
---- !u!65 &466942334
-=======
   m_RootOrder: 229
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &458634898
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4800,11 +4577,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0a366e5a36fbbc849ba636dde51beea3, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4858,8 +4631,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-=======
   m_GameObject: {fileID: 466942332}
   m_LocalRotation: {x: -0, y: -0, z: -0.35924655, w: 0.93324274}
   m_LocalPosition: {x: 6.09, y: 15.52, z: -6.89}
@@ -4953,18 +4724,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_GameObject: {fileID: 468019235}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7, y: 3.1, z: -2.8053167}
   m_LocalScale: {x: 5.7279882, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 104
-=======
   m_RootOrder: 105
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &468019237
 BoxCollider:
@@ -4997,11 +4763,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 84f36545290558b4999deaf40861d198, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5150,19 +4912,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493666411}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_LocalPosition: {x: 62.75, y: -9.409, z: -7.08}
-  m_LocalScale: {x: 1.0904166, y: 12.901637, z: 3.147216}
-  m_Children: []
-  m_Father: {fileID: 1699353165}
-  m_RootOrder: 87
-=======
   m_LocalPosition: {x: 62.75, y: -9.409, z: -7.252}
   m_LocalScale: {x: 1.0904166, y: 12.901637, z: 3.147216}
   m_Children: []
   m_Father: {fileID: 1699353165}
   m_RootOrder: 88
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &493666413
 BoxCollider:
@@ -5288,11 +5042,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 1010212748793951612, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5445,11 +5195,7 @@ Transform:
   m_LocalScale: {x: 4.717254, y: 3.4400165, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 155
-=======
   m_RootOrder: 156
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &524695864
 BoxCollider:
@@ -5482,11 +5228,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5579,11 +5321,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5643,11 +5381,7 @@ Transform:
   m_LocalScale: {x: 1.0904166, y: 13.437381, z: 1.3431108}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 68
-=======
   m_RootOrder: 69
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &542758887
 BoxCollider:
@@ -5809,11 +5543,7 @@ Transform:
   m_LocalScale: {x: 1.0904166, y: 13.437381, z: 3.1472147}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 63
-=======
   m_RootOrder: 64
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &554564393
 BoxCollider:
@@ -5875,78 +5605,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554564391}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
---- !u!1001 &556639215
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2445808756126767684, guid: 474f8c28a83eb5f428704b0e53c4e039,
-        type: 3}
-      propertyPath: m_Name
-      value: HideSpikes (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248534433455483926, guid: 474f8c28a83eb5f428704b0e53c4e039,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248534433455483926, guid: 474f8c28a83eb5f428704b0e53c4e039,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -78.42531
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248534433455483926, guid: 474f8c28a83eb5f428704b0e53c4e039,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -15.052668
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248534433455483926, guid: 474f8c28a83eb5f428704b0e53c4e039,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.2292879
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248534433455483926, guid: 474f8c28a83eb5f428704b0e53c4e039,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248534433455483926, guid: 474f8c28a83eb5f428704b0e53c4e039,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248534433455483926, guid: 474f8c28a83eb5f428704b0e53c4e039,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248534433455483926, guid: 474f8c28a83eb5f428704b0e53c4e039,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248534433455483926, guid: 474f8c28a83eb5f428704b0e53c4e039,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248534433455483926, guid: 474f8c28a83eb5f428704b0e53c4e039,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248534433455483926, guid: 474f8c28a83eb5f428704b0e53c4e039,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 474f8c28a83eb5f428704b0e53c4e039, type: 3}
---- !u!1 &573290906
-=======
 --- !u!1 &573290906
 GameObject:
   m_ObjectHideFlags: 0
@@ -6041,7 +5699,6 @@ MeshFilter:
   m_GameObject: {fileID: 573290906}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &578242389
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6072,15 +5729,9 @@ Transform:
   m_LocalScale: {x: 4.6055837, y: 4.5365934, z: 5.4146056}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 79
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &573290908
-=======
   m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -121.435005}
 --- !u!65 &578242391
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6171,15 +5822,9 @@ Transform:
   m_LocalScale: {x: 0.23837596, y: 12.901637, z: 0.5817405}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 86
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -121.435005}
---- !u!65 &578242391
-=======
   m_RootOrder: 221
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &593631742
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6363,11 +6008,7 @@ Transform:
   m_LocalScale: {x: 11.422647, y: 0.99999994, z: 7.7861905}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 126
-=======
   m_RootOrder: 127
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &606139895
 BoxCollider:
@@ -6400,11 +6041,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: f4caa11616ecb9041b459a020c575a12, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6557,11 +6194,7 @@ Transform:
   m_LocalScale: {x: 0.7943497, y: 5.023269, z: 11.656738}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 103
-=======
   m_RootOrder: 104
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &613340163
 BoxCollider:
@@ -6594,11 +6227,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 9b7535e1ed5c95141ae45579896325ab, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6820,11 +6449,7 @@ Transform:
   m_LocalScale: {x: 1.4972903, y: 1.15, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 115
-=======
   m_RootOrder: 116
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &628934863
 BoxCollider:
@@ -6857,11 +6482,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca6a2771d00019e4eba3d3b1386215a3, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6954,11 +6575,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7111,11 +6728,7 @@ Transform:
   m_LocalScale: {x: 4.6055837, y: 3.931166, z: 4.9407444}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 85
-=======
   m_RootOrder: 86
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -109.775}
 --- !u!65 &635358546
 BoxCollider:
@@ -7301,11 +6914,7 @@ Transform:
   m_LocalScale: {x: 10.431892, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 152
-=======
   m_RootOrder: 153
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -18.27}
 --- !u!65 &661292308
 BoxCollider:
@@ -7338,11 +6947,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: bf4d0317d916c494f869f9d8d88aa680, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7402,11 +7007,7 @@ Transform:
   m_LocalScale: {x: 0.76576126, y: 18.079956, z: 0.82529336}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 146
-=======
   m_RootOrder: 147
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &665547929
 BoxCollider:
@@ -7499,11 +7100,7 @@ Transform:
   m_LocalScale: {x: 3.4940033, y: 4.0032887, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 123
-=======
   m_RootOrder: 124
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &687007485
 BoxCollider:
@@ -7536,11 +7133,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 1010212748793951612, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7669,11 +7262,7 @@ Transform:
   m_LocalScale: {x: 0.7943497, y: 0.8580432, z: 1.6502445}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 136
-=======
   m_RootOrder: 137
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: -31.882002, z: 0}
 --- !u!65 &695994790
 BoxCollider:
@@ -7766,11 +7355,7 @@ Transform:
   m_LocalScale: {x: 4.6055837, y: 4.5365934, z: 9.229389}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 75
-=======
   m_RootOrder: 76
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -67.719}
 --- !u!65 &696210988
 BoxCollider:
@@ -7803,11 +7388,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 521403030cac0b84e8740f04dc03b26a, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7867,11 +7448,7 @@ Transform:
   m_LocalScale: {x: 0.7961567, y: 2.0835536, z: 0.82529336}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 60
-=======
   m_RootOrder: 61
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -13.768001}
 --- !u!65 &709845116
 BoxCollider:
@@ -7904,11 +7481,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: c29d4d79c18e3284e8d85d2266d72b27, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7968,11 +7541,7 @@ Transform:
   m_LocalScale: {x: 22.135443, y: 1.3878114, z: 11.325438}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 175
-=======
   m_RootOrder: 176
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &713722723
 BoxCollider:
@@ -8065,15 +7634,9 @@ Transform:
   m_LocalScale: {x: 14.776495, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 215
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 23.29}
---- !u!65 &720269537
-=======
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &725376870
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8197,11 +7760,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 33e524b2c7c45cb4598e3eb143efc76f, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8255,17 +7814,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_GameObject: {fileID: 729414427}
-  m_LocalRotation: {x: -0, y: -0, z: 0.11579816, w: 0.9932728}
-  m_LocalPosition: {x: 28.217997, y: -9.349999, z: -2.8053167}
-  m_LocalScale: {x: 0.8332354, y: 1, z: 11.656721}
-=======
   m_GameObject: {fileID: 731627015}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -438.6, y: 64.2, z: -2.8053167}
   m_LocalScale: {x: 52.470932, y: 1, z: 11.656721}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_Children: []
   m_Father: {fileID: 1699353165}
   m_RootOrder: 234
@@ -8301,11 +7853,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: b87dc3dede67df143a45b6bc35d1979a, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8365,11 +7913,7 @@ Transform:
   m_LocalScale: {x: 0.7943497, y: 0.8580432, z: 1.6502445}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 141
-=======
   m_RootOrder: 142
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0.11800001, y: -38.949, z: -0.126}
 --- !u!65 &742108804
 BoxCollider:
@@ -8458,11 +8002,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745197142}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_LocalPosition: {x: 53.45, y: -54.506, z: -7}
-=======
   m_LocalPosition: {x: 53.45, y: -54.506, z: -7.16}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalScale: {x: 1.0904166, y: 10.26324, z: 3.1472132}
   m_Children: []
   m_Father: {fileID: 1699353165}
@@ -8559,11 +8099,7 @@ Transform:
   m_LocalScale: {x: 22.135443, y: 1.3878114, z: 11.325438}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 179
-=======
   m_RootOrder: 180
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &748163528
 BoxCollider:
@@ -8652,11 +8188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753125771}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_LocalPosition: {x: 53.45, y: -54.506, z: 1.7919996}
-=======
   m_LocalPosition: {x: 53.45, y: -54.506, z: 1.632}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalScale: {x: 1.0904166, y: 10.26324, z: 1.9791785}
   m_Children: []
   m_Father: {fileID: 1699353165}
@@ -8753,11 +8285,7 @@ Transform:
   m_LocalScale: {x: 0.7961567, y: 2.0835536, z: 0.82529336}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 61
-=======
   m_RootOrder: 62
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.9360003}
 --- !u!65 &755030868
 BoxCollider:
@@ -8790,11 +8318,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: c29d4d79c18e3284e8d85d2266d72b27, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9073,11 +8597,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9137,11 +8657,7 @@ Transform:
   m_LocalScale: {x: 1.0319846, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 166
-=======
   m_RootOrder: 167
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &793882800
 BoxCollider:
@@ -9234,11 +8750,7 @@ Transform:
   m_LocalScale: {x: 1.0103455, y: 6.351495, z: 1}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 101
-=======
   m_RootOrder: 102
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &794517839
 BoxCollider:
@@ -9331,11 +8843,7 @@ Transform:
   m_LocalScale: {x: 0.76576126, y: 18.684061, z: 0.8588612}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 159
-=======
   m_RootOrder: 160
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 10.846001, y: -0.65900004, z: -4.8320003}
 --- !u!65 &811656800
 BoxCollider:
@@ -9368,11 +8876,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9401,102 +8905,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811656798}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
---- !u!1 &818200652
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 818200653}
-  - component: {fileID: 818200656}
-  - component: {fileID: 818200655}
-  - component: {fileID: 818200654}
-  m_Layer: 0
-  m_Name: Cube (229)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &818200653
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818200652}
-  m_LocalRotation: {x: 0.0117639555, y: 0.002433206, z: -0.20253374, w: 0.9792017}
-  m_LocalPosition: {x: -221.57, y: 10.84, z: -7.06}
-  m_LocalScale: {x: 0.76576126, y: 40.544384, z: 0.8252938}
-  m_Children: []
-  m_Father: {fileID: 1699353165}
-  m_RootOrder: 214
-  m_LocalEulerAnglesHint: {x: 1.3770001, y: 0, z: -23.372002}
---- !u!65 &818200654
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818200652}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &818200655
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818200652}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &818200656
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818200652}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-=======
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 --- !u!1 &823716095
 GameObject:
   m_ObjectHideFlags: 0
@@ -9528,11 +8936,7 @@ Transform:
   m_LocalScale: {x: 0.7943497, y: 0.8580432, z: 1.6502445}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 144
-=======
   m_RootOrder: 145
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: -81.853004, z: 0}
 --- !u!65 &823716097
 BoxCollider:
@@ -9787,11 +9191,7 @@ Transform:
   m_LocalScale: {x: 0.76576126, y: 38.122925, z: 0.82529336}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 161
-=======
   m_RootOrder: 162
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: -3.6880002, y: 0, z: 0}
 --- !u!65 &854829798
 BoxCollider:
@@ -9824,11 +9224,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9888,11 +9284,7 @@ Transform:
   m_LocalScale: {x: 32.303875, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 130
-=======
   m_RootOrder: 131
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &865282257
 BoxCollider:
@@ -9985,11 +9377,7 @@ Transform:
   m_LocalScale: {x: 0.7961567, y: 2.0885198, z: 0.82529336}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 59
-=======
   m_RootOrder: 60
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -22.890001}
 --- !u!65 &882348909
 BoxCollider:
@@ -10022,11 +9410,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: c29d4d79c18e3284e8d85d2266d72b27, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10374,11 +9758,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 5f3f1bb388690874fbed5485250640dc, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10438,11 +9818,7 @@ Transform:
   m_LocalScale: {x: 17.528688, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 93
-=======
   m_RootOrder: 94
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &955359644
 BoxCollider:
@@ -10475,11 +9851,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 5d027e838ac6db348980898c93402db5, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10539,11 +9911,7 @@ Transform:
   m_LocalScale: {x: 22.135443, y: 1.3878114, z: 11.325438}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 177
-=======
   m_RootOrder: 178
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &959019795
 BoxCollider:
@@ -10636,11 +10004,7 @@ Transform:
   m_LocalScale: {x: 1.0103455, y: 6.351495, z: 1}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 100
-=======
   m_RootOrder: 101
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &965939622
 BoxCollider:
@@ -10802,11 +10166,7 @@ Transform:
   m_LocalScale: {x: 0.76576126, y: 18.079956, z: 0.82529336}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 147
-=======
   m_RootOrder: 148
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &989186528
 BoxCollider:
@@ -10839,11 +10199,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10903,11 +10259,7 @@ Transform:
   m_LocalScale: {x: 36.013542, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 172
-=======
   m_RootOrder: 173
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &995957770
 BoxCollider:
@@ -11000,11 +10352,7 @@ Transform:
   m_LocalScale: {x: 0.7943497, y: 0.8580432, z: 1.6502445}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 142
-=======
   m_RootOrder: 143
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: -89.549, z: 0}
 --- !u!65 &997469295
 BoxCollider:
@@ -11130,11 +10478,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 5f3f1bb388690874fbed5485250640dc, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11194,11 +10538,7 @@ Transform:
   m_LocalScale: {x: 24.97008, y: 0.51622707, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 95
-=======
   m_RootOrder: 96
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 32.655003}
 --- !u!65 &1027239511
 BoxCollider:
@@ -11231,11 +10571,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 84f36545290558b4999deaf40861d198, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11433,15 +10769,9 @@ Transform:
   m_LocalScale: {x: 21.509415, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 220
-  m_LocalEulerAnglesHint: {x: 2.479, y: 0.671, z: -32.568}
---- !u!65 &1032446207
-=======
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1037826046
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11565,104 +10895,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1049894897
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049894893}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1051683314
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1051683315}
-  - component: {fileID: 1051683318}
-  - component: {fileID: 1051683317}
-  - component: {fileID: 1051683316}
-  m_Layer: 0
-  m_Name: Cube (210)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
---- !u!4 &1049894894
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049894893}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.699999, y: -67.31, z: 1.4074}
-  m_LocalScale: {x: 1.0904166, y: 13.437381, z: 1.3431108}
-  m_Children: []
-  m_Father: {fileID: 1699353165}
-  m_RootOrder: 82
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1049894895
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049894893}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1049894896
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049894893}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
   - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -11711,8 +10943,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-=======
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 --- !u!4 &1051683315
 Transform:
   m_ObjectHideFlags: 0
@@ -11758,11 +10988,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11891,11 +11117,7 @@ Transform:
   m_LocalScale: {x: 6.738126, y: 3.4400165, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 171
-=======
   m_RootOrder: 172
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1066981951
 BoxCollider:
@@ -12021,11 +11243,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 33e524b2c7c45cb4598e3eb143efc76f, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12178,11 +11396,7 @@ Transform:
   m_LocalScale: {x: 13.418659, y: 0.51622707, z: 1.2713741}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 113
-=======
   m_RootOrder: 114
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 37.078003}
 --- !u!65 &1100637806
 BoxCollider:
@@ -12215,11 +11429,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 33e524b2c7c45cb4598e3eb143efc76f, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12372,15 +11582,9 @@ Transform:
   m_LocalScale: {x: 0.23837596, y: 12.901637, z: 0.5817405}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 212
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 35.174}
---- !u!65 &1128369351
-=======
   m_RootOrder: 227
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1114592408
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12471,11 +11675,7 @@ Transform:
   m_LocalScale: {x: 13.418659, y: 0.51622707, z: 1.2713741}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 107
-=======
   m_RootOrder: 108
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -42.108}
 --- !u!65 &1134114487
 BoxCollider:
@@ -12508,11 +11708,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 33e524b2c7c45cb4598e3eb143efc76f, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12572,11 +11768,7 @@ Transform:
   m_LocalScale: {x: 1.0904166, y: 13.437381, z: 2.1357627}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 67
-=======
   m_RootOrder: 68
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1143352603
 BoxCollider:
@@ -12669,15 +11861,9 @@ Transform:
   m_LocalScale: {x: 13.667625, y: 1, z: -1.8347678}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 78
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20.004002}
---- !u!65 &1153409524
-=======
   m_RootOrder: 216
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 13.299001}
 --- !u!65 &1147414356
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12708,11 +11894,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 33e524b2c7c45cb4598e3eb143efc76f, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12841,15 +12023,9 @@ Transform:
   m_LocalScale: {x: 4.6055837, y: 4.5365934, z: 9.229389}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 186
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1157646381
-=======
   m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20.004002}
 --- !u!65 &1153409524
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12880,11 +12056,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 521403030cac0b84e8740f04dc03b26a, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12944,11 +12116,7 @@ Transform:
   m_LocalScale: {x: 0.76576126, y: 8.262577, z: 0.8252942}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 208
-=======
   m_RootOrder: 186
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1157646381
 BoxCollider:
@@ -13041,11 +12209,7 @@ Transform:
   m_LocalScale: {x: 1.0938134, y: 74.23106, z: 0.8252942}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 181
-=======
   m_RootOrder: 208
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1171835745
 BoxCollider:
@@ -13171,11 +12335,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13204,8 +12364,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173853106}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-=======
 --- !u!1 &1192718710
 GameObject:
   m_ObjectHideFlags: 0
@@ -13299,7 +12457,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192718710}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 --- !u!1 &1214022750
 GameObject:
   m_ObjectHideFlags: 0
@@ -13331,11 +12488,7 @@ Transform:
   m_LocalScale: {x: 0.7943497, y: 0.8580432, z: 1.6502445}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 135
-=======
   m_RootOrder: 136
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0.11800001, y: 18.718, z: -0.126}
 --- !u!65 &1214022752
 BoxCollider:
@@ -13428,11 +12581,7 @@ Transform:
   m_LocalScale: {x: 52.470932, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 180
-=======
   m_RootOrder: 181
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1245632004
 BoxCollider:
@@ -13525,11 +12674,7 @@ Transform:
   m_LocalScale: {x: 1.0103455, y: 6.351495, z: 1}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 98
-=======
   m_RootOrder: 99
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1252323437
 BoxCollider:
@@ -13622,11 +12767,7 @@ Transform:
   m_LocalScale: {x: 0.7961567, y: 2.0835536, z: 0.82529336}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 57
-=======
   m_RootOrder: 58
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.9360003}
 --- !u!65 &1259764335
 BoxCollider:
@@ -13659,11 +12800,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: c29d4d79c18e3284e8d85d2266d72b27, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13723,11 +12860,7 @@ Transform:
   m_LocalScale: {x: 6.738126, y: 3.4400165, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 169
-=======
   m_RootOrder: 170
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1262750886
 BoxCollider:
@@ -13853,11 +12986,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: c29d4d79c18e3284e8d85d2266d72b27, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13917,11 +13046,7 @@ Transform:
   m_LocalScale: {x: 12.1985855, y: 2.088486, z: 1}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 96
-=======
   m_RootOrder: 97
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1276460910
 BoxCollider:
@@ -14107,11 +13232,7 @@ Transform:
   m_LocalScale: {x: 1.0938134, y: 34.28944, z: 0.8252938}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 217
-=======
   m_RootOrder: 211
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: -2.1650002, y: -0.55600005, z: -8.961}
 --- !u!65 &1291140638
 BoxCollider:
@@ -14204,11 +13325,7 @@ Transform:
   m_LocalScale: {x: 17.460373, y: 0.51622707, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 106
-=======
   m_RootOrder: 107
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -42.108}
 --- !u!65 &1299655753
 BoxCollider:
@@ -14241,11 +13358,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 84f36545290558b4999deaf40861d198, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14305,11 +13418,7 @@ Transform:
   m_LocalScale: {x: 0.76576126, y: 38.122925, z: 0.82529336}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 158
-=======
   m_RootOrder: 159
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 3.571, y: 0, z: 0}
 --- !u!65 &1309102683
 BoxCollider:
@@ -14342,11 +13451,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14685,11 +13790,7 @@ Transform:
   m_LocalScale: {x: 4.6055837, y: 3.931166, z: 4.9407444}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 71
-=======
   m_RootOrder: 72
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -26.053001}
 --- !u!65 &1340523929
 BoxCollider:
@@ -14722,11 +13823,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 521403030cac0b84e8740f04dc03b26a, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14786,11 +13883,7 @@ Transform:
   m_LocalScale: {x: 3.4940033, y: 4.907025, z: 1.9802314}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 125
-=======
   m_RootOrder: 126
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1368390228
 BoxCollider:
@@ -14823,11 +13916,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 1010212748793951612, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14887,11 +13976,7 @@ Transform:
   m_LocalScale: {x: 1.0904166, y: 12.762881, z: 2.1357627}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 81
-=======
   m_RootOrder: 82
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1376762084
 BoxCollider:
@@ -15146,15 +14231,9 @@ Transform:
   m_LocalScale: {x: 0.7961567, y: 13.723271, z: 3.1472147}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 213
-  m_LocalEulerAnglesHint: {x: -2.2350001, y: 0, z: -23.372002}
---- !u!65 &1398176867
-=======
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1405594778
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15278,11 +14357,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0a366e5a36fbbc849ba636dde51beea3, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15342,11 +14417,7 @@ Transform:
   m_LocalScale: {x: 13.418659, y: 0.51622707, z: 1.2713741}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 110
-=======
   m_RootOrder: 111
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 37.078003}
 --- !u!65 &1422236266
 BoxCollider:
@@ -15379,11 +14450,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 33e524b2c7c45cb4598e3eb143efc76f, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15536,11 +14603,7 @@ Transform:
   m_LocalScale: {x: 18.117708, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 131
-=======
   m_RootOrder: 132
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1430111152
 BoxCollider:
@@ -15633,11 +14696,7 @@ Transform:
   m_LocalScale: {x: 13.418659, y: 0.51622707, z: 1.2713741}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 114
-=======
   m_RootOrder: 115
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 37.078003}
 --- !u!65 &1432614255
 BoxCollider:
@@ -15670,11 +14729,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 33e524b2c7c45cb4598e3eb143efc76f, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15803,11 +14858,7 @@ Transform:
   m_LocalScale: {x: 0.7943497, y: 0.8580432, z: 1.6502445}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 134
-=======
   m_RootOrder: 135
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: -8.312, z: 0}
 --- !u!65 &1449963170
 BoxCollider:
@@ -16095,11 +15146,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 5d027e838ac6db348980898c93402db5, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16252,11 +15299,7 @@ Transform:
   m_LocalScale: {x: 0.7064708, y: 27.597578, z: 0.82529336}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 160
-=======
   m_RootOrder: 161
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: -4.393, y: 0, z: -8.464001}
 --- !u!65 &1461211160
 BoxCollider:
@@ -16289,11 +15332,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16353,11 +15392,7 @@ Transform:
   m_LocalScale: {x: 4.6055837, y: 3.931166, z: 4.9407444}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 84
-=======
   m_RootOrder: 85
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -79.768005}
 --- !u!65 &1468495949
 BoxCollider:
@@ -16636,11 +15671,7 @@ Transform:
   m_LocalScale: {x: 8.467903, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 102
-=======
   m_RootOrder: 103
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -12.433001}
 --- !u!65 &1492569517
 BoxCollider:
@@ -16673,11 +15704,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 9b7535e1ed5c95141ae45579896325ab, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16737,11 +15764,7 @@ Transform:
   m_LocalScale: {x: 0.7943497, y: 0.8580432, z: 1.6502445}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 143
-=======
   m_RootOrder: 144
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: -105.40501, z: 0}
 --- !u!65 &1496510718
 BoxCollider:
@@ -16834,11 +15857,7 @@ Transform:
   m_LocalScale: {x: 1.4972903, y: 1.15, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 116
-=======
   m_RootOrder: 117
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1500240539
 BoxCollider:
@@ -16871,11 +15890,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17004,11 +16019,7 @@ Transform:
   m_LocalScale: {x: 1.0904164, y: 2.0728517, z: -6.360933}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 65
-=======
   m_RootOrder: 66
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1509405224
 BoxCollider:
@@ -17041,11 +16052,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 5f3f1bb388690874fbed5485250640dc, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17105,15 +16112,9 @@ Transform:
   m_LocalScale: {x: 1.3865072, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 216
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 23.29}
---- !u!65 &1512502940
-=======
   m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 13.299001}
 --- !u!65 &1514423668
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17198,17 +16199,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_GameObject: {fileID: 1514423666}
-  m_LocalRotation: {x: -0, y: -0, z: 0.11579816, w: 0.9932728}
-  m_LocalPosition: {x: 23.661997, y: -11.13, z: -2.8053167}
-  m_LocalScale: {x: 0.8332354, y: 1, z: 11.656721}
-=======
   m_GameObject: {fileID: 1515622404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -37.7, y: -17.53, z: -2.8053167}
   m_LocalScale: {x: 4.717254, y: 3.4400165, z: 11.656721}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_Children: []
   m_Father: {fileID: 1699353165}
   m_RootOrder: 122
@@ -17244,11 +16238,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17285,102 +16275,6 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - component: {fileID: 1515622405}
-  - component: {fileID: 1515622408}
-  - component: {fileID: 1515622407}
-  - component: {fileID: 1515622406}
-  m_Layer: 0
-  m_Name: Cube (134)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1515622405
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515622404}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.7, y: -17.53, z: -2.8053167}
-  m_LocalScale: {x: 4.717254, y: 3.4400165, z: 11.656721}
-  m_Children: []
-  m_Father: {fileID: 1699353165}
-  m_RootOrder: 121
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1515622406
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515622404}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1515622407
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515622404}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1515622408
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515622404}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1517599588
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-=======
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   - component: {fileID: 1517599589}
   - component: {fileID: 1517599592}
   - component: {fileID: 1517599591}
@@ -17404,11 +16298,7 @@ Transform:
   m_LocalScale: {x: 5.7279882, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 91
-=======
   m_RootOrder: 92
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1517599590
 BoxCollider:
@@ -17441,11 +16331,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 84f36545290558b4999deaf40861d198, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17538,11 +16424,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 84f36545290558b4999deaf40861d198, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17635,11 +16517,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 1010212748793951612, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17699,11 +16577,7 @@ Transform:
   m_LocalScale: {x: 4.6055837, y: 4.5365934, z: 9.229389}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 77
-=======
   m_RootOrder: 78
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -67.719}
 --- !u!65 &1536367600
 BoxCollider:
@@ -17736,11 +16610,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 521403030cac0b84e8740f04dc03b26a, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17833,11 +16703,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: c29d4d79c18e3284e8d85d2266d72b27, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17897,11 +16763,7 @@ Transform:
   m_LocalScale: {x: 4.6055837, y: 4.5365934, z: 9.229389}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 74
-=======
   m_RootOrder: 75
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -67.719}
 --- !u!65 &1558858366
 BoxCollider:
@@ -17934,11 +16796,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 521403030cac0b84e8740f04dc03b26a, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17998,11 +16856,7 @@ Transform:
   m_LocalScale: {x: 7.40885, y: 1, z: 1.6395642}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 118
-=======
   m_RootOrder: 119
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 26.709002}
 --- !u!65 &1565178279
 BoxCollider:
@@ -18035,11 +16889,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 33e524b2c7c45cb4598e3eb143efc76f, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18161,9 +17011,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570792791}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
---- !u!1 &1578203810
-=======
 --- !u!1 &1571909033
 GameObject:
   m_ObjectHideFlags: 0
@@ -18258,7 +17105,6 @@ MeshFilter:
   m_GameObject: {fileID: 1571909033}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1573624174
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18289,15 +17135,9 @@ Transform:
   m_LocalScale: {x: 15.305815, y: 1.0000023, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 62
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -13.768001}
---- !u!65 &1578203812
-=======
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &1573624176
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18328,11 +17168,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 1010212748793951612, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18633,13 +17469,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590551166}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_LocalPosition: {x: -79.753, y: -4.7444, z: -0.1245}
-  m_LocalScale: {x: 0.5572268, y: 0.28737563, z: 0.25102955}
-=======
   m_LocalPosition: {x: -107.5, y: -4.1838, z: 0}
   m_LocalScale: {x: 0.47207206, y: 1, z: 0.28177}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -18675,11 +17506,7 @@ Transform:
   m_LocalScale: {x: 0.76576126, y: 38.148808, z: 0.8588612}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 164
-=======
   m_RootOrder: 165
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 3.0180001, y: -0.648, z: -4.742}
 --- !u!65 &1590855091
 BoxCollider:
@@ -18772,11 +17599,7 @@ Transform:
   m_LocalScale: {x: 1.0904166, y: 28.31168, z: 1.3431108}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 150
-=======
   m_RootOrder: 151
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -19.496}
 --- !u!65 &1591363218
 BoxCollider:
@@ -18809,11 +17632,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18873,11 +17692,7 @@ Transform:
   m_LocalScale: {x: 4.6055837, y: 4.5365934, z: 9.229389}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 76
-=======
   m_RootOrder: 77
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -67.719}
 --- !u!65 &1593074836
 BoxCollider:
@@ -19003,11 +17818,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 5f3f1bb388690874fbed5485250640dc, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19100,11 +17911,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19164,11 +17971,7 @@ Transform:
   m_LocalScale: {x: 0.7943497, y: 0.8580432, z: 1.6502445}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 133
-=======
   m_RootOrder: 134
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 12.769001, z: 0}
 --- !u!65 &1617209218
 BoxCollider:
@@ -19294,11 +18097,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19637,11 +18436,7 @@ Transform:
   m_LocalScale: {x: 4.717254, y: 3.4400165, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 154
-=======
   m_RootOrder: 155
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1666442123
 BoxCollider:
@@ -19674,11 +18469,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19734,19 +18525,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667497428}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_LocalPosition: {x: 62.75, y: -9.409, z: 1.7119994}
-  m_LocalScale: {x: 1.0904166, y: 12.901637, z: 1.9791805}
-  m_Children: []
-  m_Father: {fileID: 1699353165}
-  m_RootOrder: 88
-=======
   m_LocalPosition: {x: 62.75, y: -9.409, z: 1.54}
   m_LocalScale: {x: 1.0904166, y: 12.901637, z: 1.9791805}
   m_Children: []
   m_Father: {fileID: 1699353165}
   m_RootOrder: 89
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1667497430
 BoxCollider:
@@ -19932,11 +18715,7 @@ Transform:
   m_LocalScale: {x: 4.717254, y: 3.4400165, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 162
-=======
   m_RootOrder: 163
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1683181004
 BoxCollider:
@@ -20025,11 +18804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685734059}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_LocalPosition: {x: 62.64, y: -54.506, z: 1.7919996}
-=======
   m_LocalPosition: {x: 62.64, y: -54.506, z: 1.632}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalScale: {x: 1.0904166, y: 10.26324, z: 1.9791785}
   m_Children: []
   m_Father: {fileID: 1699353165}
@@ -20159,11 +18934,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: f4caa11616ecb9041b459a020c575a12, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20216,13 +18987,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699353164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_LocalPosition: {x: -123.48, y: -5.1403, z: 0.72766}
-  m_LocalScale: {x: 0.5572268, y: 0.25102955, z: 0.28737563}
-=======
   m_LocalPosition: {x: -144.55, y: -4.6281, z: 2.9653168}
   m_LocalScale: {x: 0.47207206, y: 0.28177, z: 1}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_Children:
   - {fileID: 1037826045}
   - {fileID: 1910873182}
@@ -20436,13 +19202,6 @@ Transform:
   - {fileID: 9027388}
   - {fileID: 1291140637}
   - {fileID: 2085579131}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 42994065}
-  - {fileID: 1032446206}
-  - {fileID: 1920623301}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-=======
   - {fileID: 333693310}
   - {fileID: 1570792792}
   - {fileID: 1938559162}
@@ -20471,7 +19230,6 @@ Transform:
   - {fileID: 1420828804}
   m_Father: {fileID: 0}
   m_RootOrder: 20
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1705335453
 GameObject:
@@ -20504,15 +19262,9 @@ Transform:
   m_LocalScale: {x: 1.0938134, y: 72.60498, z: 0.82529545}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 197
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12.853001}
---- !u!65 &1709443932
-=======
   m_RootOrder: 230
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1705335455
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20543,11 +19295,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20607,15 +19355,9 @@ Transform:
   m_LocalScale: {x: 0.76576126, y: 16.69565, z: 0.8252946}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 73
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -56.06}
---- !u!65 &1711930620
-=======
   m_RootOrder: 197
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12.853001}
 --- !u!65 &1709443932
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20646,11 +19388,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21091,11 +19829,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 5f3f1bb388690874fbed5485250640dc, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21248,11 +19982,7 @@ Transform:
   m_LocalScale: {x: 3.1912892, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 153
-=======
   m_RootOrder: 154
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1752816877
 BoxCollider:
@@ -21285,11 +20015,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21349,11 +20075,7 @@ Transform:
   m_LocalScale: {x: 17.594893, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 178
-=======
   m_RootOrder: 179
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1758857122
 BoxCollider:
@@ -21446,11 +20168,7 @@ Transform:
   m_LocalScale: {x: 12.392303, y: 1, z: 11.633055}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 105
-=======
   m_RootOrder: 106
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1765592979
 BoxCollider:
@@ -21483,11 +20201,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 5d027e838ac6db348980898c93402db5, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21547,11 +20261,7 @@ Transform:
   m_LocalScale: {x: 8.467903, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 132
-=======
   m_RootOrder: 133
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -12.433001}
 --- !u!65 &1775169630
 BoxCollider:
@@ -21770,11 +20480,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21834,11 +20540,7 @@ Transform:
   m_LocalScale: {x: 0.7961567, y: 1.4942421, z: 0.82529336}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 58
-=======
   m_RootOrder: 59
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 22.815}
 --- !u!65 &1817682908
 BoxCollider:
@@ -21871,11 +20573,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: c29d4d79c18e3284e8d85d2266d72b27, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21935,11 +20633,7 @@ Transform:
   m_LocalScale: {x: 4.717254, y: 3.4400165, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 122
-=======
   m_RootOrder: 123
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1831676445
 BoxCollider:
@@ -21972,11 +20666,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22036,11 +20726,7 @@ Transform:
   m_LocalScale: {x: 22.26841, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 174
-=======
   m_RootOrder: 175
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1834271286
 BoxCollider:
@@ -22133,11 +20819,7 @@ Transform:
   m_LocalScale: {x: 17.785982, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 69
-=======
   m_RootOrder: 70
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1847939687
 BoxCollider:
@@ -22170,11 +20852,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: f4caa11616ecb9041b459a020c575a12, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22234,11 +20912,7 @@ Transform:
   m_LocalScale: {x: 0.7943497, y: 0.8580432, z: 1.6502445}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 145
-=======
   m_RootOrder: 146
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: -81.853004, z: 0}
 --- !u!65 &1851761553
 BoxCollider:
@@ -22433,11 +21107,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22493,19 +21163,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870943589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_LocalPosition: {x: -6.13, y: -18.63, z: -2.941}
-  m_LocalScale: {x: 0.7943497, y: 4.1600776, z: 9.60959}
-  m_Children: []
-  m_Father: {fileID: 1699353165}
-  m_RootOrder: 148
-=======
   m_LocalPosition: {x: -6.13, y: -18.63, z: -3.39}
   m_LocalScale: {x: 0.7943497, y: 4.1600776, z: 10.545476}
   m_Children: []
   m_Father: {fileID: 1699353165}
   m_RootOrder: 149
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1870943591
 BoxCollider:
@@ -22538,11 +21200,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 5f3f1bb388690874fbed5485250640dc, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22602,11 +21260,7 @@ Transform:
   m_LocalScale: {x: 1.0319846, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 168
-=======
   m_RootOrder: 169
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1876066066
 BoxCollider:
@@ -22792,11 +21446,7 @@ Transform:
   m_LocalScale: {x: 0.88492846, y: 3.1645775, z: 11.656727}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 117
-=======
   m_RootOrder: 118
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1880214625
 BoxCollider:
@@ -22829,11 +21479,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23019,11 +21665,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23176,11 +21818,7 @@ Transform:
   m_LocalScale: {x: 6.6586995, y: 0.99999994, z: 9.702206}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 127
-=======
   m_RootOrder: 128
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1922746367
 BoxCollider:
@@ -23213,11 +21851,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: f4caa11616ecb9041b459a020c575a12, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23277,11 +21911,7 @@ Transform:
   m_LocalScale: {x: 4.6055837, y: 7.56317, z: 7.774311}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 72
-=======
   m_RootOrder: 73
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -69.428}
 --- !u!65 &1924268199
 BoxCollider:
@@ -23314,11 +21944,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 521403030cac0b84e8740f04dc03b26a, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23411,11 +22037,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 8935d128230deb944bfbe7b1fdf560a4, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23508,11 +22130,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 1010212748793951612, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23572,11 +22190,7 @@ Transform:
   m_LocalScale: {x: 0.7943497, y: 0.8580432, z: 1.6502445}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 138
-=======
   m_RootOrder: 139
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: -24.186, z: 0}
 --- !u!65 &1935110319
 BoxCollider:
@@ -23888,11 +22502,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 5d027e838ac6db348980898c93402db5, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23922,8 +22532,6 @@ MeshFilter:
   m_GameObject: {fileID: 1950921625}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1970827489
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-=======
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24110,7 +22718,6 @@ MeshFilter:
   m_GameObject: {fileID: 1972675356}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1980297670
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24141,15 +22748,9 @@ Transform:
   m_LocalScale: {x: 0.7064708, y: 27.597578, z: 0.82529336}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 80
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 53.606003}
---- !u!65 &1970827491
-=======
   m_RootOrder: 158
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.464001}
 --- !u!65 &1980297672
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24240,15 +22841,9 @@ Transform:
   m_LocalScale: {x: 17.528688, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 137
-  m_LocalEulerAnglesHint: {x: 0, y: -47.738003, z: 0}
---- !u!65 &1972675358
-=======
   m_RootOrder: 164
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1986569324
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24279,11 +22874,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 2100000, guid: 5d027e838ac6db348980898c93402db5, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24343,15 +22934,9 @@ Transform:
   m_LocalScale: {x: 0.7961567, y: 2.5842433, z: 6.490334}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 157
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.464001}
---- !u!65 &1980297672
-=======
   m_RootOrder: 217
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1989387632
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24442,15 +23027,9 @@ Transform:
   m_LocalScale: {x: 58.072674, y: 0.9715844, z: 11.325438}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 163
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1986569324
-=======
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &1992212033
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24643,11 +23222,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 2476790706971504607, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
-=======
   - {fileID: 1125239065207877241, guid: 8f528d04933af024398be82cbc1d5cac, type: 3}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24809,11 +23384,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: f9ab68b7517ed34488cdbbbf976b7ffd, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24873,11 +23444,7 @@ Transform:
   m_LocalScale: {x: 10.950608, y: 1, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 70
-=======
   m_RootOrder: 71
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2030384893
 BoxCollider:
@@ -24910,11 +23477,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 2d1d538e5671f6246bcec75bb22fb572, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25007,11 +23570,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25067,19 +23626,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043160810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_LocalPosition: {x: 50.18, y: -9.409, z: -7.092}
-  m_LocalScale: {x: 1.0904166, y: 12.901637, z: 3.147216}
-  m_Children: []
-  m_Father: {fileID: 1699353165}
-  m_RootOrder: 89
-=======
   m_LocalPosition: {x: 50.18, y: -9.409, z: -7.252}
   m_LocalScale: {x: 1.0904166, y: 12.901637, z: 3.147216}
   m_Children: []
   m_Father: {fileID: 1699353165}
   m_RootOrder: 90
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2043160812
 BoxCollider:
@@ -25172,11 +23723,7 @@ Transform:
   m_LocalScale: {x: 1.0938134, y: 34.28944, z: 0.8252938}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 218
-=======
   m_RootOrder: 212
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: -2.1650002, y: -0.55600005, z: -8.961}
 --- !u!65 &2085579132
 BoxCollider:
@@ -25362,11 +23909,7 @@ Transform:
   m_LocalScale: {x: 4.717254, y: 3.4400165, z: 11.656721}
   m_Children: []
   m_Father: {fileID: 1699353165}
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  m_RootOrder: 120
-=======
   m_RootOrder: 121
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2102661867
 BoxCollider:
@@ -25399,11 +23942,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 5d027e838ac6db348980898c93402db5, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25496,11 +24035,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/Scenes/Levels/Level 3.unity
-  - {fileID: 8748892135801146194, guid: 6b7c63dcf00c14d4f8d50746541ddaec, type: 3}
-=======
   - {fileID: 2100000, guid: 0f3f7bfbfc24fd245971f1b42199cff2, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/Level 3.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
