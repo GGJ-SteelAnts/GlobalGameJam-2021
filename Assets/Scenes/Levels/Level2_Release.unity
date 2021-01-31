@@ -3116,6 +3116,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094923891560833916, guid: e4d82994b58b7304b91c915c597b71f8,
         type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7094923891560833916, guid: e4d82994b58b7304b91c915c597b71f8,
+        type: 3}
+      propertyPath: runSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7094923891560833916, guid: e4d82994b58b7304b91c915c597b71f8,
+        type: 3}
       propertyPath: powerImage
       value: 
       objectReference: {fileID: 313720474}
