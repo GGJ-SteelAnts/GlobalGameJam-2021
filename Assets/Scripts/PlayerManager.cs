@@ -316,6 +316,7 @@ public class PlayerManager : MonoBehaviour
     {
         if ((powerType.GetHashCode() - 1) == 3)
         {
+            DataManager.Score(DataManager.Score() + 10);
             DataManager.Level(SceneManager.GetSceneByName(nextSceneName).buildIndex);
             SceneManager.LoadScene(nextSceneName);
         }
