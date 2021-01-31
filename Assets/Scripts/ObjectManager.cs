@@ -118,6 +118,23 @@ public class ObjectManager : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            if (objectType == ObjectType.Ladder)
+            {
+                playerManager = other.gameObject.GetComponent<PlayerManager>();
+                if (playerManager.activeAbility.Count > 0 && playerManager.activeAbility[0] == 4)
+                {
+                    playerManager.onLadder = true;
+                    playerManager.GetComponent<Rigidbody>().useGravity = false;
+                    interact = true;
+                }
+            }
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")

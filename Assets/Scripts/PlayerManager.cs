@@ -27,11 +27,13 @@ public class PlayerManager : MonoBehaviour
     public Image powerImage;
     private bool dubleJump = true;
     private GameObject pushPullObject;
+    private float pushPullObjectDistance;
     public float dashPower = 40f;
     public float dashTime = 0.2f;
     private float actualDashTime;
     private int dashButton;
     private bool dash = false;
+    private bool cannotMove = false;
 
     private bool startEating = false;
 
@@ -67,6 +69,7 @@ public class PlayerManager : MonoBehaviour
         }
         if (actualHealth <= 0 || gameObject.transform.position.y < -400.0f)
         {
+            cannotMove = true;
             playerAnimator.Play("Die");
         }
         if (interact)
@@ -87,9 +90,11 @@ public class PlayerManager : MonoBehaviour
         }
         AbilityAction();
         DeactivePowerCube();
-        Move();
-        RunSwitch();
-        Animation();
+        if (!cannotMove) {
+            Move();
+            RunSwitch();
+            Animation();
+        }
 
         if (startEating)
         {
@@ -107,7 +112,10 @@ public class PlayerManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Jump();
+        if (!cannotMove && !onLadder)
+        {
+            Jump();
+        }
     }
 
     private void AbilityAction()
@@ -116,10 +124,20 @@ public class PlayerManager : MonoBehaviour
         {
             if (pushPullObject != null)
             {
-                pushPullObject.GetComponent<Rigidbody>().MovePosition(
-                    pushPullObject.transform.position +
-                    (pushPullObject.transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
-                );
+                float distance = Vector3.Distance(pushPullObject.transform.position, gameObject.transform.position);
+                if (pushPullObjectDistance - 0.1f <= distance && pushPullObjectDistance + 0.1f >= distance)
+                {
+                    Rigidbody pcmRigidB = pushPullObject.GetComponent<Rigidbody>();
+                    pcmRigidB.constraints = RigidbodyConstraints.FreezeRotation;
+                    pushPullObject.GetComponent<Rigidbody>().MovePosition(
+                        pushPullObject.transform.position +
+                        (pushPullObject.transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
+                    );
+                }
+                else
+                {
+                    RemovePushPullObject();
+                }
             }
             powerImage.sprite = powerIcons[1];
         }
@@ -185,13 +203,21 @@ public class PlayerManager : MonoBehaviour
     public void SetPushPullObject(GameObject objectPP)
     {
         if (activeAbility.Count > 0 && activeAbility[0] == 2) {
+            if (pushPullObject != null)
+            {
+                pushPullObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionX;
+            }
             pushPullObject = objectPP;
+            pushPullObjectDistance = Vector3.Distance(pushPullObject.transform.position, gameObject.transform.position);
         }
     }
 
     public void RemovePushPullObject()
     {
-        pushPullObject = null;
+        if (pushPullObject != null) {
+            pushPullObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionX;
+            pushPullObject = null;
+        }
     }
 
     void RunSwitch()
@@ -326,16 +352,6 @@ public class PlayerManager : MonoBehaviour
                     transform.localScale.y + savePower,
                     transform.localScale.z + savePower
                 );
-                /*transform.localScale = new Vector3(
-                    transform.localScale.x + power,
-                    transform.localScale.y + power,
-                    transform.localScale.z + power
-                );*/
-                /*transform.localPosition = new Vector3(
-                    transform.localPosition.x,
-                    transform.localPosition.y + power * 2,
-                    transform.localPosition.z
-                );*/
 
             }
             else if (powerType == PowerCubeManager.PowerType.Faster)
@@ -464,11 +480,13 @@ public class PlayerManager : MonoBehaviour
 
     public void StartEatPowerCube()
     {
+        cannotMove = true;
         startEating = true;
     }
 
     public void EndEatPowerCube()
     {
+        cannotMove = false;
         startEating = false;
         ActivePowerCube(powerCubeManager.powerUnit, powerCubeManager.powerTime, powerCubeManager.powerType, powerCubeManager.nextSceneName);
         Destroy(powerCubeManager.gameObject);
