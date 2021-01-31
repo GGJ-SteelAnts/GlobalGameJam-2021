@@ -491,7 +491,7 @@ PrefabInstance:
     - target: {fileID: 8000970721633820988, guid: f1921397dd03b054c87b4ce2e3d72adc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8000970721633820988, guid: f1921397dd03b054c87b4ce2e3d72adc,
         type: 3}
@@ -811,7 +811,7 @@ PrefabInstance:
     - target: {fileID: 7120608647080996506, guid: 597897b562955934fae65d62e0a8e3cd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 7120608647080996506, guid: 597897b562955934fae65d62e0a8e3cd,
         type: 3}
@@ -5269,7 +5269,7 @@ PrefabInstance:
     - target: {fileID: 1593063039033634447, guid: 2d077f1b027540045b6833e51a067855,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1593063039033634447, guid: 2d077f1b027540045b6833e51a067855,
         type: 3}
@@ -5412,7 +5412,7 @@ PrefabInstance:
     - target: {fileID: 6695479724104099607, guid: 94642d7ef8c97e544af1d5ca3596a37f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6695479724104099607, guid: 94642d7ef8c97e544af1d5ca3596a37f,
         type: 3}
@@ -5476,7 +5476,7 @@ PrefabInstance:
     - target: {fileID: 2199064835177506788, guid: d42abe5652faa4543b100c9bf55091a7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2199064835177506788, guid: d42abe5652faa4543b100c9bf55091a7,
         type: 3}
@@ -5559,13 +5559,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094923891560833916, guid: e4d82994b58b7304b91c915c597b71f8,
         type: 3}
+      propertyPath: dashTime
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7094923891560833916, guid: e4d82994b58b7304b91c915c597b71f8,
+        type: 3}
       propertyPath: runSpeed
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7094923891560833916, guid: e4d82994b58b7304b91c915c597b71f8,
         type: 3}
       propertyPath: dashPower
-      value: 15
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7094923891560833916, guid: e4d82994b58b7304b91c915c597b71f8,
         type: 3}
@@ -5650,7 +5655,7 @@ PrefabInstance:
     - target: {fileID: 8000970721633820988, guid: f1921397dd03b054c87b4ce2e3d72adc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 8000970721633820988, guid: f1921397dd03b054c87b4ce2e3d72adc,
         type: 3}

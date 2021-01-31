@@ -67,7 +67,7 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             DataManager.Level(SceneManager.GetActiveScene().buildIndex);
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
         }
         if (actualHealth <= 0 || gameObject.transform.position.y < -400.0f)
         {

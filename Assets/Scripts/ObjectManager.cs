@@ -110,7 +110,7 @@ public class ObjectManager : MonoBehaviour
                 playerManager = other.gameObject.GetComponent<PlayerManager>();
                 meshRenderer.materials[0].EnableKeyword("_EMISSION");
                 meshRenderer.materials[0].SetColor("_EmissionColor", new Color(0.2735849f, 0.2018939f, 0.09162514f) * 0.8f);
-                meshRenderer.materials[1].SetFloat("_Outline", 0.25f);
+                meshRenderer.materials[1].SetFloat("_Outline", 2.5f);
                 interact = true;
             }
 
