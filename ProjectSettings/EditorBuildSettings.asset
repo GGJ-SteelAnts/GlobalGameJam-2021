@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level1_Release.unity
     guid: 326dea585e0ea574389529eaae8a0ab4
   - enabled: 1
-    path: Assets/Scenes/Levels/Hans.unity
+    path: Assets/Scenes/Levels/Level2_Release.unity
     guid: 5bd5cae5450d4864e9aa9a1fcc849adb
   - enabled: 1
     path: Assets/Scenes/Menu/FinalMenu.unity
