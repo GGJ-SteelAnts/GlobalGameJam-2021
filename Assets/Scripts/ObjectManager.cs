@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class ObjectManager : MonoBehaviour
 {
-    public enum ObjectType {Nothing, PushPull, Sign};
+    public enum ObjectType {Nothing, PushPull, Sign, Ladder};
     public ObjectType objectType = ObjectType.Nothing;
     private Rigidbody rigidBody;
     private MeshRenderer meshRenderer;
     private PlayerManager playerManager;
     private bool interact = false;
     public GameObject detailSign;
+    public List<Transform> MovePoints = new List<Transform>();
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,10 @@ public class ObjectManager : MonoBehaviour
             {
                 meshRenderer = meshR[1];
             }
+        }
+        else if (objectType == ObjectType.Ladder)
+        {
+            meshRenderer = GetComponentInChildren<MeshRenderer>();
         }
         else
         {
@@ -67,7 +72,6 @@ public class ObjectManager : MonoBehaviour
                 {
                     detailSign.SetActive(false);
                 }
-
             }
         } 
         else
@@ -76,12 +80,15 @@ public class ObjectManager : MonoBehaviour
             {
                 meshRenderer.materials[1].SetColor("_OutlineColor", new Color(0.5276349f, 0.5566038f, 0.118147f));
             }
-            if (Input.GetKeyUp(KeyCode.E))
+            if (objectType == ObjectType.PushPull)
             {
-                if (playerManager != null)
+                if (Input.GetKeyUp(KeyCode.E))
                 {
-                    playerManager.RemovePushPullObject();
-                    playerManager = null;
+                    if (playerManager != null)
+                    {
+                        playerManager.RemovePushPullObject();
+                        playerManager = null;
+                    }
                 }
             }
         } 
@@ -97,6 +104,16 @@ public class ObjectManager : MonoBehaviour
                 meshRenderer.materials[1].SetFloat("_Outline", 2.5f);
                 interact = true;
             }
+
+            if (objectType == ObjectType.Ladder)
+            {
+                playerManager = other.gameObject.GetComponent<PlayerManager>();
+                playerManager.onLadder = true;
+                if (playerManager.activeAbility.Count > 0 && playerManager.activeAbility[0] == 4) {
+                    playerManager.GetComponent<Rigidbody>().useGravity = false;
+                }
+                interact = true;
+            }
         }
     }
 
@@ -104,7 +121,14 @@ public class ObjectManager : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
+            if (objectType == ObjectType.Ladder)
+            {
+                playerManager.onLadder = false;
+                playerManager.GetComponent<Rigidbody>().useGravity = true;
+            }
+            if (meshRenderer != null) {
+                meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
+            }
             interact = false;
         }
     }

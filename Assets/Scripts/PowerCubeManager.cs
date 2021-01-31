@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PowerCubeManager : MonoBehaviour
 {
-    public enum PowerType {Nothing, Bigger, Faster, Jumper, Artefact, DubleJump, PushPull, Dash};
+    public enum PowerType {Nothing, Bigger, Faster, Jumper, Artefact, DubleJump, PushPull, Dash, Ladder};
     public PowerType powerType = PowerType.Nothing;
     public float powerTime = 5f;
     public float powerUnit = 10f;
@@ -26,6 +26,10 @@ public class PowerCubeManager : MonoBehaviour
         {
             GetComponentInChildren<MeshRenderer>().material.color = Color.white;
         }
+        if (powerType == PowerType.Ladder)
+        {
+            GetComponentInChildren<MeshRenderer>().material.color = Color.black;
+        }
         if (powerType == PowerType.Bigger) {
             GetComponentInChildren<MeshRenderer>().material.color = Color.blue;
         } 
@@ -37,7 +41,7 @@ public class PowerCubeManager : MonoBehaviour
         {
             GetComponentInChildren<MeshRenderer>().material.color = Color.green;
         }
-        else if (powerType == PowerType.Artefact || powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash)
+        else if (powerType == PowerType.Artefact || powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash || powerType == PowerType.Ladder)
         {
             meshRenderer = GetComponentInChildren<MeshRenderer>();
             meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
@@ -59,7 +63,7 @@ public class PowerCubeManager : MonoBehaviour
             {
                 meshRenderer.materials[1].SetFloat("_Outline", 0.4f);
             }
-            else if (powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash)
+            else if (powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash || powerType == PowerType.Ladder)
             {
                 meshRenderer.materials[1].SetFloat("_Outline", 0.01f);
             }
@@ -69,7 +73,7 @@ public class PowerCubeManager : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (powerType == PowerType.Artefact || powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash)
+            if (powerType == PowerType.Artefact || powerType == PowerType.DubleJump || powerType == PowerType.PushPull || powerType == PowerType.Dash || powerType == PowerType.Ladder)
             {
                 meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
             }

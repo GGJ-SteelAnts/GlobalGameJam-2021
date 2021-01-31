@@ -13,14 +13,15 @@ public class PlayerManager : MonoBehaviour
     public float actualHealth;
     private float[] actualPowerTimes = new float[] { 0f, 0f, 0f };
     public bool onGround = true;
+    public bool onLadder = false;
     private bool run = false;
     private Animator playerAnimator;
     private Rigidbody rigidBody;
     private PowerCubeManager powerCubeManager;
     private bool interact = false;
 
-    public List<int> activeAbility = new List<int>(); //without ability=0 or null, dubleJump = 1, push/pull = 2, dash = 3
-    public List<GameObject> PowerPrefabs = new List<GameObject>(); //dubleJump = 0, push/pull = 1, dash = 2
+    public List<int> activeAbility = new List<int>(); //without ability=0 or null, dubleJump = 1, push/pull = 2, dash = 3, ladder = 4
+    public List<GameObject> PowerPrefabs = new List<GameObject>(); //dubleJump = 0, push/pull = 1, dash = 2, ladder = 3
     private bool dubleJump = true;
     private GameObject pushPullObject;
     public float dashPower = 40f;
@@ -70,7 +71,8 @@ public class PlayerManager : MonoBehaviour
                 powerCubeManager.powerType == PowerCubeManager.PowerType.Artefact ||
                 powerCubeManager.powerType == PowerCubeManager.PowerType.DubleJump ||
                 powerCubeManager.powerType == PowerCubeManager.PowerType.PushPull ||
-                powerCubeManager.powerType == PowerCubeManager.PowerType.Dash
+                powerCubeManager.powerType == PowerCubeManager.PowerType.Dash ||
+                powerCubeManager.powerType == PowerCubeManager.PowerType.Ladder
             )) {
                 if (Input.GetKeyUp(KeyCode.E))
                 {
@@ -118,7 +120,8 @@ public class PlayerManager : MonoBehaviour
         }
         else if (activeAbility.Count > 0 && activeAbility[0] == 3)
         {
-            if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !dash) {
+            if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !dash)
+            {
                 if (actualDashTime < Time.time)
                 {
                     if (Input.GetKeyUp(KeyCode.D))
@@ -133,7 +136,8 @@ public class PlayerManager : MonoBehaviour
                 }
                 else
                 {
-                    if (dashButton == 1 && Input.GetKeyUp(KeyCode.D)) {
+                    if (dashButton == 1 && Input.GetKeyUp(KeyCode.D))
+                    {
                         rigidBody.AddForce(
                             (transform.right * dashPower * 10 * 5 * 1 * Time.deltaTime) +
                             (transform.up * 1 * 10 * Time.deltaTime),
@@ -142,7 +146,7 @@ public class PlayerManager : MonoBehaviour
                         dash = true;
                         dashButton = 0;
                         actualDashTime = Time.time - 1f;
-                    } 
+                    }
                     else if (dashButton == 2 && Input.GetKeyUp(KeyCode.A))
                     {
                         rigidBody.AddForce(
@@ -227,11 +231,12 @@ public class PlayerManager : MonoBehaviour
 
     void Move()
     {
-        if (onGround) {
+        if (onGround || (onLadder && activeAbility.Count > 0 && activeAbility[0] == 4)) {
             rigidBody.MovePosition(
                 transform.position +
+                (onLadder && activeAbility.Count > 0 && activeAbility[0] == 4 ? (transform.up * speed * Input.GetAxis("Vertical") * Time.deltaTime) : Vector3.zero) +
                 (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
-            );
+            );;
         }
     }
 
@@ -286,6 +291,12 @@ public class PlayerManager : MonoBehaviour
             DropPower();
             //dash
             activeAbility[0] = 3;
+        }
+        else if ((powerType.GetHashCode() - 1) == 7)
+        {
+            DropPower();
+            //ladder
+            activeAbility[0] = 4;
         }
         else if (actualPowerTimes.Length <= (powerType.GetHashCode()) || actualPowerTimes[powerType.GetHashCode() - 1] < Time.time) 
         {
@@ -370,13 +381,24 @@ public class PlayerManager : MonoBehaviour
     {
         if (other.tag == "Ground" || other.tag == "Objects")
         {
-            rigidBody.AddForce(
-                (transform.right * (run ? runSpeed : speed) * 5 * Input.GetAxis("Horizontal") * Time.deltaTime) +
-                (transform.up * 10 * Time.deltaTime),
-                ForceMode.VelocityChange
-            );
+            if (!onLadder) {
+                rigidBody.AddForce(
+                    (transform.right * (run ? runSpeed : speed) * 5 * Input.GetAxis("Horizontal") * Time.deltaTime) +
+                    (transform.up * 10 * Time.deltaTime),
+                    ForceMode.VelocityChange
+                );
+            } 
             onGround = false;
             dash = false;
+        }
+        if (other.gameObject.GetComponent<ObjectManager>() != null)
+        {
+            if (other.gameObject.GetComponent<ObjectManager>().objectType == ObjectManager.ObjectType.Ladder) {
+                rigidBody.AddForce(
+                        (transform.right * (run ? runSpeed : speed) * 2.5f * Input.GetAxis("Horizontal") * Time.deltaTime),
+                        ForceMode.VelocityChange
+                    );
+            }
         }
         if (other.gameObject.GetComponent<PowerCubeManager>()  != null)
         {

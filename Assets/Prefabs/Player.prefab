@@ -736,11 +736,13 @@ MonoBehaviour:
   health: 100
   actualHealth: 100
   onGround: 1
+  onLadder: 0
   activeAbility: 00000000
   PowerPrefabs:
   - {fileID: 200189416050843931, guid: 3ddcad8db762bdf41b5b49fff6fb6a3b, type: 3}
   - {fileID: 2644881069278570743, guid: 94642d7ef8c97e544af1d5ca3596a37f, type: 3}
   - {fileID: 7945524436670112111, guid: 2d077f1b027540045b6833e51a067855, type: 3}
+  - {fileID: 7411583397803452420, guid: d42abe5652faa4543b100c9bf55091a7, type: 3}
   dashPower: 40
   dashTime: 0.2
 --- !u!95 &7009705026125325791
