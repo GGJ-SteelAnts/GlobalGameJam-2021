@@ -3632,6 +3632,16 @@ PrefabInstance:
       propertyPath: clips.Array.data[3].clip
       value: 
       objectReference: {fileID: 8300000, guid: ebff1b1b6619bdf48a334db25b73db57, type: 3}
+    - target: {fileID: 6182518231170453917, guid: e4d82994b58b7304b91c915c597b71f8,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182518231170453917, guid: e4d82994b58b7304b91c915c597b71f8,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7094923891560833857, guid: e4d82994b58b7304b91c915c597b71f8,
         type: 3}
       propertyPath: m_Name
