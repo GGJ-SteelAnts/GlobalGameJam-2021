@@ -35,6 +35,7 @@ public class ObjectManager : MonoBehaviour
         {
             meshRenderer = GetComponent<MeshRenderer>();
         }
+        meshRenderer.materials[0].DisableKeyword("_EMISSION");
         meshRenderer.materials[1].SetFloat ("_Outline", 0.0f);
         meshRenderer.materials[1].SetColor("_OutlineColor", new Color(0.5276349f, 0.5566038f, 0.118147f));
         rigidBody = GetComponent<Rigidbody>();
@@ -113,6 +114,23 @@ public class ObjectManager : MonoBehaviour
                     playerManager.GetComponent<Rigidbody>().useGravity = false;
                 }
                 interact = true;
+            }
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            if (objectType == ObjectType.Ladder)
+            {
+                playerManager = other.gameObject.GetComponent<PlayerManager>();
+                if (playerManager.activeAbility.Count > 0 && playerManager.activeAbility[0] == 4)
+                {
+                    playerManager.onLadder = true;
+                    playerManager.GetComponent<Rigidbody>().useGravity = false;
+                    interact = true;
+                }
             }
         }
     }

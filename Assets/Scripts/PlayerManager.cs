@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -22,13 +23,17 @@ public class PlayerManager : MonoBehaviour
 
     public List<int> activeAbility = new List<int>(); //without ability=0 or null, dubleJump = 1, push/pull = 2, dash = 3, ladder = 4
     public List<GameObject> PowerPrefabs = new List<GameObject>(); //dubleJump = 0, push/pull = 1, dash = 2, ladder = 3
+    public List<Sprite> powerIcons = new List<Sprite>(); //dubleJump = 0, push/pull = 1, dash = 2, ladder = 3
+    public Image powerImage;
     private bool dubleJump = true;
     private GameObject pushPullObject;
+    private float pushPullObjectDistance;
     public float dashPower = 40f;
-    public float dashTime = 0.2f;
+    public float dashTime = 0.3f;
     private float actualDashTime;
     private int dashButton;
     private bool dash = false;
+    private bool cannotMove = false;
 
     private bool startEating = false;
 
@@ -59,10 +64,12 @@ public class PlayerManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("MainMenu");
+            DataManager.Level(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(6);
         }
         if (actualHealth <= 0 || gameObject.transform.position.y < -400.0f)
         {
+            cannotMove = true;
             playerAnimator.Play("Die");
         }
         if (interact)
@@ -83,9 +90,11 @@ public class PlayerManager : MonoBehaviour
         }
         AbilityAction();
         DeactivePowerCube();
-        Move();
-        RunSwitch();
-        Animation();
+        if (!cannotMove) {
+            Move();
+            RunSwitch();
+            Animation();
+        }
 
         if (startEating)
         {
@@ -103,7 +112,10 @@ public class PlayerManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Jump();
+        if (!cannotMove && !onLadder)
+        {
+            Jump();
+        }
     }
 
     private void AbilityAction()
@@ -112,14 +124,26 @@ public class PlayerManager : MonoBehaviour
         {
             if (pushPullObject != null)
             {
-                pushPullObject.GetComponent<Rigidbody>().MovePosition(
-                    pushPullObject.transform.position +
-                    (pushPullObject.transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
-                );
+                float distance = Vector3.Distance(pushPullObject.transform.position, gameObject.transform.position);
+                if (pushPullObjectDistance - 0.1f <= distance && pushPullObjectDistance + 0.1f >= distance)
+                {
+                    Rigidbody pcmRigidB = pushPullObject.GetComponent<Rigidbody>();
+                    pcmRigidB.constraints = RigidbodyConstraints.FreezeRotation;
+                    pushPullObject.GetComponent<Rigidbody>().MovePosition(
+                        pushPullObject.transform.position +
+                        (pushPullObject.transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
+                    );
+                }
+                else
+                {
+                    RemovePushPullObject();
+                }
             }
+            powerImage.sprite = powerIcons[1];
         }
         else if (activeAbility.Count > 0 && activeAbility[0] == 3)
         {
+            powerImage.sprite = powerIcons[2];
             if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !dash)
             {
                 if (actualDashTime < Time.time)
@@ -140,7 +164,7 @@ public class PlayerManager : MonoBehaviour
                     {
                         rigidBody.AddForce(
                             (transform.right * dashPower * 10 * 5 * 1 * Time.deltaTime) +
-                            (transform.up * 1 * 10 * Time.deltaTime),
+                            (transform.up * 2 * 10 * Time.deltaTime),
                             ForceMode.VelocityChange
                         );
                         dash = true;
@@ -151,7 +175,7 @@ public class PlayerManager : MonoBehaviour
                     {
                         rigidBody.AddForce(
                             (transform.right * dashPower * 10 * 5 * -1 * Time.deltaTime) +
-                            (transform.up * 1 * 10 * Time.deltaTime),
+                            (transform.up * 2 * 10 * Time.deltaTime),
                             ForceMode.VelocityChange
                         );
                         dash = true;
@@ -160,6 +184,14 @@ public class PlayerManager : MonoBehaviour
                     }
                 }
             }
+        }
+        else if (activeAbility.Count > 0 && activeAbility[0] == 4)
+        {
+            powerImage.sprite = powerIcons[3];
+        }
+        else if (activeAbility.Count > 0 && activeAbility[0] == 1)
+        {
+            powerImage.sprite = powerIcons[0];
         }
     }
 
@@ -171,13 +203,21 @@ public class PlayerManager : MonoBehaviour
     public void SetPushPullObject(GameObject objectPP)
     {
         if (activeAbility.Count > 0 && activeAbility[0] == 2) {
+            if (pushPullObject != null)
+            {
+                pushPullObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionX;
+            }
             pushPullObject = objectPP;
+            pushPullObjectDistance = Vector3.Distance(pushPullObject.transform.position, gameObject.transform.position);
         }
     }
 
     public void RemovePushPullObject()
     {
-        pushPullObject = null;
+        if (pushPullObject != null) {
+            pushPullObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionX;
+            pushPullObject = null;
+        }
     }
 
     void RunSwitch()
@@ -194,6 +234,7 @@ public class PlayerManager : MonoBehaviour
 
     public void Die()
     {
+        DataManager.Level(SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -272,6 +313,7 @@ public class PlayerManager : MonoBehaviour
     {
         if ((powerType.GetHashCode() - 1) == 3)
         {
+            DataManager.Level(SceneManager.GetSceneByName(nextSceneName).buildIndex);
             SceneManager.LoadScene(nextSceneName);
         }
         else if ((powerType.GetHashCode() - 1) == 4)
@@ -310,16 +352,6 @@ public class PlayerManager : MonoBehaviour
                     transform.localScale.y + savePower,
                     transform.localScale.z + savePower
                 );
-                /*transform.localScale = new Vector3(
-                    transform.localScale.x + power,
-                    transform.localScale.y + power,
-                    transform.localScale.z + power
-                );*/
-                /*transform.localPosition = new Vector3(
-                    transform.localPosition.x,
-                    transform.localPosition.y + power * 2,
-                    transform.localPosition.z
-                );*/
 
             }
             else if (powerType == PowerCubeManager.PowerType.Faster)
@@ -448,11 +480,13 @@ public class PlayerManager : MonoBehaviour
 
     public void StartEatPowerCube()
     {
+        cannotMove = true;
         startEating = true;
     }
 
     public void EndEatPowerCube()
     {
+        cannotMove = false;
         startEating = false;
         ActivePowerCube(powerCubeManager.powerUnit, powerCubeManager.powerTime, powerCubeManager.powerType, powerCubeManager.nextSceneName);
         Destroy(powerCubeManager.gameObject);

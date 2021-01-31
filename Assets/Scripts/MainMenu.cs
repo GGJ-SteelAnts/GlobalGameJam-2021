@@ -9,8 +9,11 @@ using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
-    public TMPro.TextMeshProUGUI ScoreText;
+    public TMPro.TextMeshProUGUI ScoreText = null;
+    public TMPro.TextMeshProUGUI ScoreOneLineText = null;
+
     public InputField name;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,10 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (ScoreOneLineText != null){
+            Debug.Log("Score 2 ");
+            ScoreOneLineText.text = "Score: " + DataManager.Score().ToString();
+        }
     }
 
     public void PlayGame()
@@ -27,10 +33,19 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void Credits()
+    public void Score()
     {
         StartCoroutine(GetText("dev.steelants.cz/GGJ2021/GeorgeJones/Server/api.php"));
-        ScoreText.text = "test";
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(DataManager.Level());
     }
 
     public void QuitGame()
@@ -43,9 +58,10 @@ public class MainMenu : MonoBehaviour
     {
         WWWForm form = new WWWForm();
         form.AddField("name", name.text);
-        form.AddField("score", 20);
+        form.AddField("score", DataManager.Score().ToString());
 
         StartCoroutine(PostText("dev.steelants.cz/vasek/GGJ2021/GeorgeJones/Server/api.php", form));
+        DataManager.Level(0);
         SceneManager.LoadScene(0);
     }
 
