@@ -69,9 +69,15 @@ public class ObjectManager : MonoBehaviour
                 {
                     detailSign.SetActive(true);
                 }
-                else if (!playerManager.onGround || Input.GetAxisRaw("Horizontal") != 0 || (Input.GetKeyUp(KeyCode.E) && detailSign.activeSelf))
+                else if ((Input.GetAxisRaw("Jump") > 0 || Input.GetAxisRaw("Horizontal") != 0 || Input.GetKeyUp(KeyCode.E)) && detailSign.activeSelf)
                 {
                     detailSign.SetActive(false);
+                    if (meshRenderer != null)
+                    {
+                        meshRenderer.materials[0].DisableKeyword("_EMISSION");
+                        meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
+                    }
+                    this.GetComponent<ObjectManager>().enabled = false;
                 }
             }
         } 
@@ -99,9 +105,11 @@ public class ObjectManager : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if (objectType == ObjectType.Sign)
+            if (objectType == ObjectType.Sign && this.GetComponent<ObjectManager>().enabled)
             {
                 playerManager = other.gameObject.GetComponent<PlayerManager>();
+                meshRenderer.materials[0].EnableKeyword("_EMISSION");
+                meshRenderer.materials[0].SetColor("_EmissionColor", new Color(0.2735849f, 0.2018939f, 0.09162514f) * 0.8f);
                 meshRenderer.materials[1].SetFloat("_Outline", 2.5f);
                 interact = true;
             }
@@ -145,6 +153,7 @@ public class ObjectManager : MonoBehaviour
                 playerManager.GetComponent<Rigidbody>().useGravity = true;
             }
             if (meshRenderer != null) {
+                meshRenderer.materials[0].DisableKeyword("_EMISSION");
                 meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
             }
             interact = false;
