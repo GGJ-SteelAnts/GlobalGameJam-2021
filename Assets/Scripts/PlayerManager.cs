@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class PlayerManager : MonoBehaviour
 
     public List<int> activeAbility = new List<int>(); //without ability=0 or null, dubleJump = 1, push/pull = 2, dash = 3, ladder = 4
     public List<GameObject> PowerPrefabs = new List<GameObject>(); //dubleJump = 0, push/pull = 1, dash = 2, ladder = 3
+    public List<Sprite> powerIcons = new List<Sprite>(); //dubleJump = 0, push/pull = 1, dash = 2, ladder = 3
+    public Image powerImage;
     private bool dubleJump = true;
     private GameObject pushPullObject;
     public float dashPower = 40f;
@@ -118,9 +121,11 @@ public class PlayerManager : MonoBehaviour
                     (pushPullObject.transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
                 );
             }
+            powerImage.sprite = powerIcons[1];
         }
         else if (activeAbility.Count > 0 && activeAbility[0] == 3)
         {
+            powerImage.sprite = powerIcons[2];
             if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) && !dash)
             {
                 if (actualDashTime < Time.time)
@@ -161,6 +166,14 @@ public class PlayerManager : MonoBehaviour
                     }
                 }
             }
+        }
+        else if (activeAbility.Count > 0 && activeAbility[0] == 4)
+        {
+            powerImage.sprite = powerIcons[3];
+        }
+        else if (activeAbility.Count > 0 && activeAbility[0] == 1)
+        {
+            powerImage.sprite = powerIcons[0];
         }
     }
 
