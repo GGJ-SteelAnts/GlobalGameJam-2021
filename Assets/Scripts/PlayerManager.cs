@@ -73,7 +73,7 @@ public class PlayerManager : MonoBehaviour
         {
             cannotMove = true;
             playerAnimator.Play("Die");
-            //FindObjectOfType<AudioManager>().Play("lose");
+            FindObjectOfType<AudioManager>().Play("Lose");
         }
         if (interact)
         {
@@ -86,7 +86,7 @@ public class PlayerManager : MonoBehaviour
             )) {
                 if (Input.GetKeyUp(KeyCode.E))
                 {
-                    //FindObjectOfType<AudioManager>().Play("Pickup");
+                    FindObjectOfType<AudioManager>().Play("Pickup");
                     playerAnimator.SetTrigger("Eat");
                     interact = false;
                 }
