@@ -14,6 +14,18 @@ public class PowerCubeManager : MonoBehaviour
 
     void Start()
     {
+        if (powerType == PowerType.DubleJump)
+        {
+            GetComponentInChildren<MeshRenderer>().material.color = Color.cyan;
+        }
+        if (powerType == PowerType.PushPull)
+        {
+            GetComponentInChildren<MeshRenderer>().material.color = Color.yellow;
+        }
+        if (powerType == PowerType.Dash)
+        {
+            GetComponentInChildren<MeshRenderer>().material.color = Color.white;
+        }
         if (powerType == PowerType.Bigger) {
             GetComponentInChildren<MeshRenderer>().material.color = Color.blue;
         } 

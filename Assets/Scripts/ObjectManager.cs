@@ -1,21 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectManager : MonoBehaviour
 {
-    public enum ObjectType {Nothing, PushPull, Drag};
+    public enum ObjectType {Nothing, PushPull, Sign};
     public ObjectType objectType = ObjectType.Nothing;
     private Rigidbody rigidBody;
     private MeshRenderer meshRenderer;
     private PlayerManager playerManager;
     private bool interact = false;
-
+    public GameObject detailSign;
 
     // Start is called before the first frame update
     void Start()
     {
-        meshRenderer = GetComponent<MeshRenderer>();
+        if (objectType == ObjectType.Sign) {
+            MeshRenderer[] meshR = GetComponentsInChildren<MeshRenderer>();
+            if (meshR[0].materials[1] != null) {
+                meshRenderer = meshR[0];
+            } 
+            else
+            {
+                meshRenderer = meshR[1];
+            }
+        }
+        else
+        {
+            meshRenderer = GetComponent<MeshRenderer>();
+        }
         meshRenderer.materials[1].SetFloat ("_Outline", 0.0f);
         meshRenderer.materials[1].SetColor("_OutlineColor", new Color(0.5276349f, 0.5566038f, 0.118147f));
         rigidBody = GetComponent<Rigidbody>();
@@ -43,6 +57,18 @@ public class ObjectManager : MonoBehaviour
                     }
                 }
             }
+            else if (objectType == ObjectType.Sign)
+            {
+                if (Input.GetKeyUp(KeyCode.E) && !detailSign.activeSelf)
+                {
+                    detailSign.SetActive(true);
+                }
+                else if (!playerManager.onGround || Input.GetAxisRaw("Horizontal") != 0 || (Input.GetKeyUp(KeyCode.E) && detailSign.activeSelf))
+                {
+                    detailSign.SetActive(false);
+                }
+
+            }
         } 
         else
         {
@@ -59,6 +85,28 @@ public class ObjectManager : MonoBehaviour
                 }
             }
         } 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            if (objectType == ObjectType.Sign)
+            {
+                playerManager = other.gameObject.GetComponent<PlayerManager>();
+                meshRenderer.materials[1].SetFloat("_Outline", 2.5f);
+                interact = true;
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            meshRenderer.materials[1].SetFloat("_Outline", 0.0f);
+            interact = false;
+        }
     }
 
     private void OnCollisionStay(Collision collision)

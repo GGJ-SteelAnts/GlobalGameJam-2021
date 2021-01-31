@@ -35,8 +35,10 @@ public class PlayerManager : MonoBehaviour
     private float saveRunSpeed;
     private float saveJump;
     private Vector3 saveSize;
+    private Vector3 saveNewSize;
     private Vector3 savePosition;
     private Vector3 saveCameraPosition;
+    private float savePower;
 
     // Start is called before the first frame update
     void Start()
@@ -48,9 +50,7 @@ public class PlayerManager : MonoBehaviour
         saveSpeed = speed;
         saveRunSpeed = runSpeed;
         saveJump = jump;
-        saveSize = playerAnimator.transform.localScale;
-        savePosition = playerAnimator.transform.localPosition;
-        saveCameraPosition = Camera.main.transform.localPosition;
+        saveSize = transform.localScale;
     }
 
     // Update is called once per frame
@@ -58,9 +58,9 @@ public class PlayerManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit(0);
+            SceneManager.LoadScene("MainMenu");
         }
-        if (actualHealth <= 0)
+        if (actualHealth <= 0 || gameObject.transform.position.y < -400.0f)
         {
             playerAnimator.Play("Die");
         }
@@ -88,7 +88,14 @@ public class PlayerManager : MonoBehaviour
         if (startEating)
         {
             float stepSmaller = 0.8f * Time.deltaTime;
-            powerCubeManager.transform.localScale = Vector3.Slerp(powerCubeManager.transform.localScale, new Vector3(0.01f, 0.01f, 0.01f), stepSmaller);
+            if (powerCubeManager != null) {
+                powerCubeManager.transform.localScale = Vector3.Slerp(powerCubeManager.transform.localScale, new Vector3(0.01f, 0.01f, 0.01f), stepSmaller);
+            }
+        }
+
+        if (actualPowerTimes[0] != 0f && actualPowerTimes[0] > Time.time)
+        {
+            transform.localScale = Vector3.Slerp(transform.localScale, saveNewSize, 1 * Time.deltaTime);
         }
     }
 
@@ -285,25 +292,23 @@ public class PlayerManager : MonoBehaviour
             actualPowerTimes[powerType.GetHashCode() - 1] = Time.time + powerTime;
             if (powerType == PowerCubeManager.PowerType.Bigger)
             {
-                saveSize = playerAnimator.transform.localScale;
-                savePosition = playerAnimator.transform.localPosition;
-                saveCameraPosition = Camera.main.transform.localPosition;
-
-                playerAnimator.transform.localScale = new Vector3(
-                    playerAnimator.transform.localScale.x + power,
-                    playerAnimator.transform.localScale.y + power,
-                    playerAnimator.transform.localScale.z + power
+                saveSize = transform.localScale;
+                savePower = power;
+                saveNewSize = new Vector3(
+                    transform.localScale.x + savePower,
+                    transform.localScale.y + savePower,
+                    transform.localScale.z + savePower
                 );
-                playerAnimator.transform.localPosition = new Vector3(
-                    playerAnimator.transform.localPosition.x,
-                    playerAnimator.transform.localPosition.y + power * 2,
-                    playerAnimator.transform.localPosition.z
-                );
-                Camera.main.transform.localPosition = new Vector3(
-                    Camera.main.transform.localPosition.x,
-                    Camera.main.transform.localPosition.y,
-                    Camera.main.transform.localPosition.z - power * 2
-                );
+                /*transform.localScale = new Vector3(
+                    transform.localScale.x + power,
+                    transform.localScale.y + power,
+                    transform.localScale.z + power
+                );*/
+                /*transform.localPosition = new Vector3(
+                    transform.localPosition.x,
+                    transform.localPosition.y + power * 2,
+                    transform.localPosition.z
+                );*/
 
             }
             else if (powerType == PowerCubeManager.PowerType.Faster)
@@ -327,10 +332,10 @@ public class PlayerManager : MonoBehaviour
     {
         if (actualPowerTimes[0] != 0f && actualPowerTimes[0] < Time.time)
         {
-            playerAnimator.transform.localScale = saveSize;
-            playerAnimator.transform.localPosition = savePosition;
-            Camera.main.transform.localPosition = saveCameraPosition;
-            actualPowerTimes[0] = 0f;
+            transform.localScale = Vector3.Slerp(transform.localScale, saveSize, 1 * Time.deltaTime);
+            if (transform.localScale == saveSize) {
+                actualPowerTimes[0] = 0f;
+            }
         }
         if (actualPowerTimes[1] != 0f && actualPowerTimes[1] < Time.time)
         {
@@ -354,9 +359,9 @@ public class PlayerManager : MonoBehaviour
             dubleJump = true;
             dash = false;
         }
-        powerCubeManager = other.gameObject.GetComponent<PowerCubeManager>();
-        if (powerCubeManager != null)
+        if (other.gameObject.GetComponent<PowerCubeManager>() != null)
         {
+            powerCubeManager = other.gameObject.GetComponent<PowerCubeManager>();
             interact = true;
         }
     }
