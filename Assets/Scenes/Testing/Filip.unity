@@ -128,6 +128,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 474268396, guid: ba918907807ecda4982b8c9ca799aa42, type: 3}
+      propertyPath: m_Text
+      value: 'This is what you want. Ancient artifact of powers.
+
+        This Artifact
+        can teleport you to next level, when you step closer and click E. When you
+        are teleported then you lost your power.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149301499462, guid: ba918907807ecda4982b8c9ca799aa42,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3071880845481565143, guid: ba918907807ecda4982b8c9ca799aa42,
         type: 3}
       propertyPath: m_IsActive
