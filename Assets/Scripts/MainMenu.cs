@@ -35,7 +35,7 @@ public class MainMenu : MonoBehaviour
 
     public void Score()
     {
-        StartCoroutine(GetText("https://dev.steelants.cz/vasek/GGJ2021/GeorgeJones/Server/api.php"));
+        StartCoroutine(GetText("http://dev.steelants.cz/vasek/GGJ2021/GeorgeJones/Server/api.php"));
     }
 
     public void BackToMainMenu()
@@ -60,7 +60,7 @@ public class MainMenu : MonoBehaviour
         form.AddField("name", name.text);
         form.AddField("score", DataManager.Score().ToString());
 
-        StartCoroutine(PostText("https://dev.steelants.cz/vasek/GGJ2021/GeorgeJones/Server/api.php", form));
+        StartCoroutine(PostText("http://dev.steelants.cz/vasek/GGJ2021/GeorgeJones/Server/api.php", form));
         DataManager.Level(0);
         SceneManager.LoadScene(0);
     }
