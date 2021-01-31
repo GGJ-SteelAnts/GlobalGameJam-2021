@@ -73,7 +73,7 @@ public class PlayerManager : MonoBehaviour
         {
             cannotMove = true;
             playerAnimator.Play("Die");
-            FindObjectOfType<AudioManager>().Play("lose");
+            //FindObjectOfType<AudioManager>().Play("lose");
         }
         if (interact)
         {
@@ -86,7 +86,7 @@ public class PlayerManager : MonoBehaviour
             )) {
                 if (Input.GetKeyUp(KeyCode.E))
                 {
-                    FindObjectOfType<AudioManager>().Play("Pickup");
+                    //FindObjectOfType<AudioManager>().Play("Pickup");
                     playerAnimator.SetTrigger("Eat");
                     interact = false;
                 }
@@ -249,6 +249,7 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetAxis("Horizontal") > 0)
         {
             playerAnimator.SetBool("Walk", true);
+            FindObjectOfType<AudioManager>().Play("Walk");
             if (pushPullObject == null) {
                 playerAnimator.transform.rotation = Quaternion.Lerp(
                     playerAnimator.transform.rotation,
@@ -260,6 +261,7 @@ public class PlayerManager : MonoBehaviour
         else if (Input.GetAxis("Horizontal") < 0)
         {
             playerAnimator.SetBool("Walk", true);
+            FindObjectOfType<AudioManager>().Play("Walk");
             if (pushPullObject == null)
             {
                 playerAnimator.transform.rotation = Quaternion.Lerp(
@@ -281,7 +283,7 @@ public class PlayerManager : MonoBehaviour
             transform.position +
             (onLadder && activeAbility.Count > 0 && activeAbility[0] == 4 ? (transform.up * speed * Input.GetAxis("Vertical") * Time.deltaTime) : Vector3.zero) +
             (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
-        );;
+        );
     }
 
     void Jump()
@@ -300,6 +302,7 @@ public class PlayerManager : MonoBehaviour
                     (transform.up * jump * 10 * Time.deltaTime), 
                     ForceMode.VelocityChange
                 );
+                FindObjectOfType<AudioManager>().Play("Jump");
             }
         }
     }
@@ -365,6 +368,7 @@ public class PlayerManager : MonoBehaviour
 
                 speed += power;
                 runSpeed += power;
+    
             }
             else if (powerType == PowerCubeManager.PowerType.Jumper)
             {
