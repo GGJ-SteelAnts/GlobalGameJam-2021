@@ -30,13 +30,17 @@ public class MainMenu : MonoBehaviour
     public void Credits()
     {
         StartCoroutine(GetText("dev.steelants.cz/GGJ2021/GeorgeJones/Server/api.php"));
-        ScoreText.text = "test";
     }
 
     public void QuitGame()
     {
         Debug.Log("Quit");
         Application.Quit();
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void ScoreSubmit()
@@ -47,6 +51,10 @@ public class MainMenu : MonoBehaviour
 
         StartCoroutine(PostText("dev.steelants.cz/vasek/GGJ2021/GeorgeJones/Server/api.php", form));
         SceneManager.LoadScene(0);
+    }
+
+    public void RestartLevel(){
+
     }
 
     IEnumerator GetText(string uri) {
