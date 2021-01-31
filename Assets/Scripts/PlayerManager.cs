@@ -57,6 +57,8 @@ public class PlayerManager : MonoBehaviour
         saveRunSpeed = runSpeed;
         saveJump = jump;
         saveSize = transform.localScale;
+
+        FindObjectOfType<AudioManager>().Play("MainTheme");
     }
 
     // Update is called once per frame

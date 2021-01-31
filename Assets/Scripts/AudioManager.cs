@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.Audio;
 using System;
 
-public class Audiomanager : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
     public AudioSound[] clips;
     // Start is called before the first frame update
-    void Awake()
+    public void Awake()
     {
         foreach (AudioSound c in clips)
         {
@@ -20,7 +20,7 @@ public class Audiomanager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Play(string name)
+    public void Play(string name)
     {
         AudioSound s = Array.Find(clips, sound => sound.name == name);
         s.source.Play();
