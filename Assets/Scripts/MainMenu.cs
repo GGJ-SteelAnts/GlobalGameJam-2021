@@ -11,9 +11,11 @@ public class MainMenu : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI ScoreText;
     public InputField name;
+    public InputField score;
     // Start is called before the first frame update
     void Start()
     {
+        score.text = "Score: " + DataManager.Score();
     }
 
     // Update is called once per frame
@@ -47,14 +49,14 @@ public class MainMenu : MonoBehaviour
     {
         WWWForm form = new WWWForm();
         form.AddField("name", name.text);
-        form.AddField("score", 20);
+        form.AddField("score", DataManager.Score());
 
         StartCoroutine(PostText("dev.steelants.cz/vasek/GGJ2021/GeorgeJones/Server/api.php", form));
         SceneManager.LoadScene(0);
     }
 
     public void RestartLevel(){
-
+        SceneManager.LoadScene(DataManager.Level());
     }
 
     IEnumerator GetText(string uri) {
