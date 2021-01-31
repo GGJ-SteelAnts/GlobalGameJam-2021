@@ -12,7 +12,7 @@ public class Audiomanager : MonoBehaviour
     {
         foreach (AudioSound c in clips)
         {
-            c.source = gameObject.AddComponent<AudionSource>();
+            c.source = gameObject.AddComponent<AudioSource>();
             c.source.clip = c.clip;
             c.source.volume = c.volume;
             c.source.pitch = c.pitch;
