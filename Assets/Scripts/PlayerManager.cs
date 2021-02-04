@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿#define testing
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -20,6 +22,7 @@ public class PlayerManager : MonoBehaviour
     private Rigidbody rigidBody;
     private PowerCubeManager powerCubeManager;
     private bool interact = false;
+    private float moveDirection = 0f;
 
     public List<int> activeAbility = new List<int>(); //without ability=0 or null, dubleJump = 1, push/pull = 2, dash = 3, ladder = 4
     public List<GameObject> PowerPrefabs = new List<GameObject>(); //dubleJump = 0, push/pull = 1, dash = 2, ladder = 3
@@ -116,10 +119,7 @@ public class PlayerManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!cannotMove && (!onLadder || (onLadder && (activeAbility.Count < 0 || activeAbility[0] != 4))))
-        {
-            Jump();
-        }
+        JumpAction();
     }
 
     private void AbilityAction()
@@ -229,7 +229,7 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetAxisRaw("Run") > 0)
         {
             run = true;
-            
+
         }
         else
         {
@@ -275,8 +275,15 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    public void changeMoveDirection(float input)
+    {
+        Debug.Log(input);
+        moveDirection += input;
+    }
+
     void Move()
     {
+#if UNITY_EDITOR || UNITY_STANDALONE
         if (Input.GetAxis("Horizontal") != 0)
         {
             if (!run) {
@@ -290,8 +297,38 @@ public class PlayerManager : MonoBehaviour
         rigidBody.MovePosition(
             transform.position +
             (onLadder && activeAbility.Count > 0 && activeAbility[0] == 4 ? (transform.up * speed * Input.GetAxis("Vertical") * Time.deltaTime) : Vector3.zero) +
-            (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal") * Time.deltaTime)
+            (transform.right * (run ? runSpeed : speed) /** Input.GetAxis("Horizontal") */* moveDirection * Time.deltaTime)
         );
+#endif
+
+#if UNITY_ANDROID || UNITY_IPHONE
+    if(moveDirection != 0)
+    {
+        if(!run)
+        {
+            FindObjectOfType<AudioManager>().Play("Walk", true);
+        }
+        else
+        {
+            FindObjectOfType<AudioManager>().Play("Run", true);
+        }
+    }
+    rigidBody.MovePosition(
+            transform.position +
+            (onLadder && activeAbility.Count > 0 && activeAbility[0] == 4 ? (transform.up * speed * Input.GetAxis("Vertical") * Time.deltaTime) : Vector3.zero) +
+            (transform.right * (run ? runSpeed : speed) * moveDirection * Time.deltaTime)
+        );
+#endif
+
+    }
+
+    //Interface pro UI
+    public void JumpAction()
+    {
+        if (!cannotMove && (!onLadder || (onLadder && (activeAbility.Count < 0 || activeAbility[0] != 4))))
+        {
+            Jump();
+        }
     }
 
     void Jump()
