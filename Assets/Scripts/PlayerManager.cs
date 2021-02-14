@@ -1,4 +1,4 @@
-﻿#define testing
+﻿#define testing //Remove this line to disable testing mode
 
 using System.Collections;
 using System.Collections.Generic;
@@ -22,13 +22,16 @@ public class PlayerManager : MonoBehaviour
     private Rigidbody rigidBody;
     private PowerCubeManager powerCubeManager;
     private bool interact = false;
-    private float moveDirection = 0f;
+    private float moveDirection = 0f; //Mobile phone equivalent of Input.GetAxis("Horizontal")
+    private float climbDirection = 0f;//Mobile phone equivalent of Input.GetAxis("Vertical")
+    private bool wantToJump = false; //Mobile phone equivalent of Input.GetAxis("Jump")
 
     public List<int> activeAbility = new List<int>(); //without ability=0 or null, dubleJump = 1, push/pull = 2, dash = 3, ladder = 4
     public List<GameObject> PowerPrefabs = new List<GameObject>(); //dubleJump = 0, push/pull = 1, dash = 2, ladder = 3
     public List<Sprite> powerIcons = new List<Sprite>(); //dubleJump = 0, push/pull = 1, dash = 2, ladder = 3
     public Image powerImage;
     private bool dubleJump = true;
+    [SerializeField]
     private GameObject pushPullObject;
     private float pushPullObjectDistance;
     public float dashPower = 40f;
@@ -48,6 +51,8 @@ public class PlayerManager : MonoBehaviour
     private Vector3 savePosition;
     private Vector3 saveCameraPosition;
     private float savePower;
+
+    public GameObject[] upNdownLadder;
 
     // Start is called before the first frame update
     void Start()
@@ -78,6 +83,8 @@ public class PlayerManager : MonoBehaviour
             playerAnimator.Play("Die");
             FindObjectOfType<AudioManager>().Play("Lose");
         }
+
+#if UNITY_STANDALONE || UNITY_EDITOR
         if (interact)
         {
             if (powerCubeManager != null && (
@@ -95,6 +102,22 @@ public class PlayerManager : MonoBehaviour
                 }
             }
         }
+#endif
+
+#if UNITY_ANDROID || UNITY_IPHONE || testing //testing is defined at line 0
+        if(onLadder && upNdownLadder[0].active == false)
+        {
+            upNdownLadder[0].SetActive(true);
+            upNdownLadder[1].SetActive(true);
+        }
+        else
+        if(onLadder == false && upNdownLadder[0].active == true)
+        {
+            upNdownLadder[0].SetActive(false);
+            upNdownLadder[1].SetActive(false);
+        }
+#endif
+
         AbilityAction();
         DeactivePowerCube();
         if (!cannotMove) {
@@ -116,6 +139,27 @@ public class PlayerManager : MonoBehaviour
             transform.localScale = Vector3.Slerp(transform.localScale, saveNewSize, 1 * Time.deltaTime);
         }
     }
+
+#if UNITY_ANDROID || UNITY_IPHONE || testing //testing is defined at line 0
+    public void pickupAbility() //Mobile controls
+    {
+        if (interact)
+        {
+            if (powerCubeManager != null && (
+                powerCubeManager.powerType == PowerCubeManager.PowerType.Artefact ||
+                powerCubeManager.powerType == PowerCubeManager.PowerType.DubleJump ||
+                powerCubeManager.powerType == PowerCubeManager.PowerType.PushPull ||
+                powerCubeManager.powerType == PowerCubeManager.PowerType.Dash ||
+                powerCubeManager.powerType == PowerCubeManager.PowerType.Ladder
+            ))
+            {
+                    FindObjectOfType<AudioManager>().Play("Pickup");
+                    playerAnimator.SetTrigger("Eat");
+                    interact = false;
+            }
+        }
+    }
+#endif
 
     private void FixedUpdate()
     {
@@ -246,7 +290,7 @@ public class PlayerManager : MonoBehaviour
     void Animation()
     {
         float localSpeed = 5f;
-        if (Input.GetAxis("Horizontal") > 0)
+        if (Input.GetAxis("Horizontal") > 0 || moveDirection > 0)
         {
             playerAnimator.SetBool("Walk", true);
             if (pushPullObject == null) {
@@ -257,7 +301,7 @@ public class PlayerManager : MonoBehaviour
                 );
             }
         }
-        else if (Input.GetAxis("Horizontal") < 0)
+        else if (Input.GetAxis("Horizontal") < 0 || moveDirection < 0)
         {
             playerAnimator.SetBool("Walk", true);
             if (pushPullObject == null)
@@ -275,16 +319,22 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    public void changeMoveDirection(float input)
+    
+    public void changeMoveDirection(float input) //Mobile phone controls
     {
-        Debug.Log(input);
+        //Debug.Log(input);
         moveDirection += input;
+    }
+
+    public void changeClimbDirection(float input) //Mobile phone controls
+    {
+        climbDirection += input;
     }
 
     void Move()
     {
-#if UNITY_EDITOR || UNITY_STANDALONE
-        if (Input.GetAxis("Horizontal") != 0)
+#if (UNITY_EDITOR || UNITY_STANDALONE) && (!testing)
+        if (Input.GetAxis("Horizontal") != 0 || moveDirection != 0)
         {
             if (!run) {
                 FindObjectOfType<AudioManager>().Play("Walk", true);
@@ -297,12 +347,12 @@ public class PlayerManager : MonoBehaviour
         rigidBody.MovePosition(
             transform.position +
             (onLadder && activeAbility.Count > 0 && activeAbility[0] == 4 ? (transform.up * speed * Input.GetAxis("Vertical") * Time.deltaTime) : Vector3.zero) +
-            (transform.right * (run ? runSpeed : speed) /** Input.GetAxis("Horizontal") */* moveDirection * Time.deltaTime)
+            (transform.right * (run ? runSpeed : speed) * Input.GetAxis("Horizontal")   * Time.deltaTime) //TODO: uncomment Input.GetAxis after testing
         );
 #endif
 
-#if UNITY_ANDROID || UNITY_IPHONE
-    if(moveDirection != 0)
+#if UNITY_ANDROID || UNITY_IPHONE || testing
+        if(moveDirection != 0)
     {
         if(!run)
         {
@@ -315,14 +365,13 @@ public class PlayerManager : MonoBehaviour
     }
     rigidBody.MovePosition(
             transform.position +
-            (onLadder && activeAbility.Count > 0 && activeAbility[0] == 4 ? (transform.up * speed * Input.GetAxis("Vertical") * Time.deltaTime) : Vector3.zero) +
+            (onLadder && activeAbility.Count > 0 && activeAbility[0] == 4 ? (transform.up * speed * climbDirection * Time.deltaTime) : Vector3.zero) +
             (transform.right * (run ? runSpeed : speed) * moveDirection * Time.deltaTime)
         );
 #endif
 
     }
 
-    //Interface pro UI
     public void JumpAction()
     {
         if (!cannotMove && (!onLadder || (onLadder && (activeAbility.Count < 0 || activeAbility[0] != 4))))
@@ -331,9 +380,15 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    public void Jump_Mobile(bool b) //Mobile phone controls
+    {
+        wantToJump = b;
+    }
+
     void Jump()
     {
-        if (Input.GetAxisRaw("Jump") > 0)
+#if UNITY_STANDALONE
+        if (Input.GetAxisRaw("Jump") > 0 || wantToJump)
         {
             if (rigidBody.velocity.y <= 1 && (onGround || (dubleJump && activeAbility.Count > 0 && activeAbility[0] == 1)) )
             {
@@ -350,6 +405,27 @@ public class PlayerManager : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("Jump");
             }
         }
+#endif
+
+#if UNITY_ANDROID || UNITY_IPHONE
+    if (wantToJump)
+    {
+        if (rigidBody.velocity.y <= 1 && (onGround || (dubleJump && activeAbility.Count > 0 && activeAbility[0] == 1)) )
+        {
+            if (!onGround)
+            {
+                dubleJump = false;
+            }
+            FindObjectOfType<AudioManager>().Play("Jump");
+            pushPullObject = null;
+            rigidBody.AddForce(
+                (transform.up * jump * 10 * Time.deltaTime), 
+                ForceMode.VelocityChange
+            );
+            FindObjectOfType<AudioManager>().Play("Jump");
+        }
+    }
+#endif
     }
 
     private void DropPower()
